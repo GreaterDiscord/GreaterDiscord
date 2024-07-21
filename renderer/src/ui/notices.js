@@ -48,27 +48,27 @@ export default class Notices {
             // Immediately remove the notice without adding the closing class.
             if (immediately) return noticeElement.remove();
 
-            noticeElement.classList.add("bd-notice-closing");
+            noticeElement.classList.add("gd-notice-closing");
             setTimeout(() => {noticeElement.remove();}, 300);
         };
 
         const noticeElement = this.createElement("div", {
-            className: this.joinClassNames("bd-notice", type && `bd-notice-${type}`),
+            className: this.joinClassNames("gd-notice", type && `gd-notice-${type}`),
         }, this.createElement("div", {
-            className: "bd-notice-close",
+            className: "gd-notice-close",
             onclick: closeNotification.bind(null, false)
         }), this.createElement("span", {
-            className: "bd-notice-content"
+            className: "gd-notice-content"
         }, content), ...buttons.map((button) => {
             if (!button || !button.label || typeof(button.onClick) !== "function") return null;
 
             return this.createElement("button", {
-                className: "bd-notice-button",
+                className: "gd-notice-button",
                 onclick: button.onClick.bind(null, closeNotification)
             }, button.label);
         }));
 
-        document.getElementById("bd-notices").appendChild(noticeElement);
+        document.getElementById("gd-notices").appendChild(noticeElement);
 
         if (timeout > 0) {
             setTimeout(closeNotification, timeout);
@@ -78,11 +78,11 @@ export default class Notices {
     }
 
     static ensureContainer() {
-        if (document.getElementById("bd-notices")) return true;
+        if (document.getElementById("gd-notices")) return true;
         const container = document.querySelector(`.${this.baseClass}`);
         if (!container) return false;
         const noticeContainer = this.createElement("div", {
-            id: "bd-notices"
+            id: "gd-notices"
         });
         container.prepend(noticeContainer);
 

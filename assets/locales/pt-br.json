@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Registro de Depuração",
-                    "note": "Salva todas os logs do console no arquivo debug.log dentro da pasta do BetterDiscord"
+                    "note": "Salva todas os logs do console no arquivo debug.log dentro da pasta do GreaterDiscord"
                 }
             }
         }

@@ -1,7 +1,7 @@
 import electron from "electron";
 import path from "path";
 
-import BetterDiscord from "./betterdiscord";
+import GreaterDiscord from "./greaterdiscord";
 
 class BrowserWindow extends electron.BrowserWindow {
     constructor(options) {
@@ -10,19 +10,19 @@ class BrowserWindow extends electron.BrowserWindow {
         options.webPreferences.preload = path.join(__dirname, "preload.js");
 
         // Don't allow just "truthy" values
-        const shouldBeTransparent = BetterDiscord.getSetting("window", "transparency");
+        const shouldBeTransparent = GreaterDiscord.getSetting("window", "transparency");
         if (typeof(shouldBeTransparent) === "boolean" && shouldBeTransparent) {
             options.transparent = true;
             options.backgroundColor = "#00000000";
         }
 
         // Only affect frame if it is *explicitly* set
-        // const shouldHaveFrame = BetterDiscord.getSetting("window", "frame");
+        // const shouldHaveFrame = GreaterDiscord.getSetting("window", "frame");
         // if (typeof(shouldHaveFrame) === "boolean") options.frame = shouldHaveFrame;
 
         super(options);
         this.__originalPreload = originalPreload;
-        BetterDiscord.setup(this);
+        GreaterDiscord.setup(this);
     }
 }
 

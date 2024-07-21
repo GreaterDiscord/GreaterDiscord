@@ -7,7 +7,7 @@ import Flex from "../base/flex";
 export default function Footer({id, className, children, justify, direction, align, wrap}) {
     return <Flex
                 id={id}
-                className={Utilities.className("bd-modal-footer", className)}
+                className={Utilities.className("gd-modal-footer", className)}
                 grow={0}
                 shrink={0}
                 direction={direction ?? Flex.Direction.HORIZONTAL_REVERSE}

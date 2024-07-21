@@ -1,32 +1,32 @@
-.bd-notice-success {
+.gd-notice-success {
     --color: #3BA55D;
 }
 
-.bd-notice-error {
+.gd-notice-error {
     --color: #ED4245;
 }
 
-.bd-notice-info {
+.gd-notice-info {
     --color: #4A8FE1;
 }
 
-.bd-notice-warning {
+.gd-notice-warning {
     --color: #FAA81A;
 }
 
-.bd-notice-closing {
+.gd-notice-closing {
     transition: height 400ms ease;
     height: 0 !important;
 }
 
-@keyframes bd-open-notice {
+@keyframes gd-open-notice {
     from {
         height: 0;
     }
 }
 
-.bd-notice {
-    animation: bd-open-notice 400ms ease;
+.gd-notice {
+    animation: gd-open-notice 400ms ease;
     overflow: hidden;
     height: 36px;
     font-size: 14px;
@@ -44,11 +44,11 @@
     background: var(--color, var(--brand-experiment-600, #3C45A5));
 }
 
-.bd-notice:first-child {
+.gd-notice:first-child {
     border-radius: 8px 0 0;
 }
 
-.bd-notice-close {
+.gd-notice-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -63,7 +63,7 @@
     -webkit-app-region: no-drag;
 }
 
-.bd-notice-button {
+.gd-notice-button {
     font-size: 14px;
     font-weight: 500;
     position: relative;
@@ -84,11 +84,11 @@
     background: transparent;
 }
 
-.bd-notice-button:hover {
+.gd-notice-button:hover {
     color: var(--color, var(--background-mobile-primary));
     background: #FFFFFF;
 }
 
-.bd-notice-close:hover {
+.gd-notice-close:hover {
     opacity: 1;
 }

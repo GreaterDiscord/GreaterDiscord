@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "Логировать ошибки",
-                    "note": "Записывает весь вывод из консоли в файл debug.log в папке BetterDiscord"
+                    "note": "Записывает весь вывод из консоли в файл debug.log в папке GreaterDiscord"
                 },
                 "devTools": {
                     "name": "Меню разработчика",
@@ -230,10 +230,10 @@
     },
     "Updater": {
         "updateFailed": "Ошибка обновления",
-        "updateFailedMessage": "Не удалось обновить BetterDiscord. Пожалуйста скачайте последнюю версию загрузчика с нашего сайта (https://betterdiscord.app/) и переустановите программу.",
+        "updateFailedMessage": "Не удалось обновить GreaterDiscord. Пожалуйста скачайте последнюю версию загрузчика с нашего сайта (https://greaterdiscord.app/) и переустановите программу.",
         "updateSuccessful": "Обновление успешно!",
-        "updateAvailable": "BetterDiscord имеет обновление (v{{version}})",
-        "addonUpdatesAvailable": "BetterDiscord нашел обновления для {{count}} ваших {{type}}!",
+        "updateAvailable": "GreaterDiscord имеет обновление (v{{version}})",
+        "addonUpdatesAvailable": "GreaterDiscord нашел обновления для {{count}} ваших {{type}}!",
         "addonUpdated": "{{name}} был обновлен до версии {{version}}",
         "checking": "Проверить обновления!",
         "finishedChecking": "Проверка обновлений завершена!",

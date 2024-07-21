@@ -1,25 +1,25 @@
-.bd-spinner {
+.gd-spinner {
     width: 32px;
     height: 32px;
     position: relative;
 }
 
-.bd-cube1,
-.bd-cube2 {
+.gd-cube1,
+.gd-cube2 {
     background-color: #3E82E5;
     width: 10px;
     height: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    animation: bd-sk-cubemove 1.8s infinite ease-in-out;
+    animation: gd-sk-cubemove 1.8s infinite ease-in-out;
 }
 
-.bd-cube2 {
+.gd-cube2 {
     animation-delay: -0.9s;
 }
 
-@keyframes bd-sk-cubemove {
+@keyframes gd-sk-cubemove {
     25% {
         transform: translateX(22px) rotate(-90deg) scale(0.5);
     }

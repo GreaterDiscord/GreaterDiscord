@@ -7,14 +7,14 @@ const Anims = WebpackModules.getByProps("Easing");
 
 
 export const Sizes = Object.freeze({
-    SMALL: "bd-modal-small",
-    MEDIUM: "bd-modal-medium",
-    LARGE: "bd-modal-large",
+    SMALL: "gd-modal-small",
+    MEDIUM: "gd-modal-medium",
+    LARGE: "gd-modal-large",
     DYNAMIC: ""
 });
 
 export const Styles = Object.freeze({
-    STANDARD: "bd-modal-standard",
+    STANDARD: "gd-modal-standard",
     CUSTOM: ""
 });
 
@@ -40,7 +40,7 @@ export default function ModalRoot({className, transitionState, children, size = 
 
     return <FocusLock disableTrack={true}>
         <Spring.animated.div
-                className={Utilities.className("bd-modal-root", size, className, style)}
+                className={Utilities.className("gd-modal-root", size, className, style)}
                 style={springStyles}
             >
         {children}
@@ -84,7 +84,7 @@ export default function ModalRoot({className, transitionState, children, size = 
     // return springTransition((styles, isVisible) => {
     //     if (!isVisible) console.log("not visible");
     //     return <Spring.animated.div
-    //             className={Utilities.className("bd-modal-root", size, className, style)}
+    //             className={Utilities.className("gd-modal-root", size, className, style)}
     //             style={styles}
     //         >
     //     {children}

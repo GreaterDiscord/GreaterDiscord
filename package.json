@@ -1,5 +1,5 @@
 {
-    "name": "betterdiscord",
+    "name": "greaterdiscord",
     "version": "1.10.2",
     "description": "Enhances Discord by adding functionality and themes.",
     "main": "src/index.js",

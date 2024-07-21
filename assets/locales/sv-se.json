@@ -72,7 +72,7 @@
                 },
                 "debugLogs": {
                     "name": "Felsökningsloggar",
-                    "note": "Allt från konsolen hamnar i filen debug.log i BetterDiscord mappen"
+                    "note": "Allt från konsolen hamnar i filen debug.log i GreaterDiscord mappen"
                 },
                 "devTools": {
                     "name": "Utvecklarverktyg"
@@ -168,7 +168,7 @@
     },
     "Updater": {
         "updateFailed": "Uppdateringen misslyckades!",
-        "updateFailedMessage": "BetterDiscord kunde inte uppdateras. Ladda ned den senaste versionen av installationsprogrammet från vår webbplats (https://betterdiscord.app/) och installera om BetterDiscord.",
+        "updateFailedMessage": "GreaterDiscord kunde inte uppdateras. Ladda ned den senaste versionen av installationsprogrammet från vår webbplats (https://greaterdiscord.app/) och installera om GreaterDiscord.",
         "updateSuccessful": "Uppdateringen lyckades!",
         "checking": "Söker efter uppdateringar!",
         "finishedChecking": "Sökningen efter uppdateringar är slutförd!",

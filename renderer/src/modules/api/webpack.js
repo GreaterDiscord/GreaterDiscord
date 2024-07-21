@@ -15,7 +15,7 @@ const getOptions = (args, defaultOptions = {}) => {
 };
 
 /**
- * `Webpack` is a utility class for getting internal webpack modules. Instance is accessible through the {@link BdApi}.
+ * `Webpack` is a utility class for getting internal webpack modules. Instance is accessible through the {@link GdApi}.
  * This is extremely useful for interacting with the internals of Discord.
  * @type Webpack
  * @summary {@link Webpack} is a utility class for getting internal webpack modules.
@@ -104,9 +104,9 @@ const Webpack = {
      * @return {[Any, string]}
      */
     getWithKey(filter, options = {}) {
-        if (("first" in options)) return Logger.error("BdApi.Webpack~getWithKey", "Unsupported option first.");
-        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("BdApi.Webpack~getWithKey", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
-        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("BdApi.Webpack~getWithKey", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
+        if (("first" in options)) return Logger.error("GdApi.Webpack~getWithKey", "Unsupported option first.");
+        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("GdApi.Webpack~getWithKey", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
+        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("GdApi.Webpack~getWithKey", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
         return WebpackModules.getWithKey(filter, options);
     },
 
@@ -121,9 +121,9 @@ const Webpack = {
      * @return {any}
      */
     getModule(filter, options = {}) {
-        if (("first" in options) && typeof(options.first) !== "boolean") return Logger.error("BdApi.Webpack~get", "Unsupported type used for options.first", options.first, "boolean expected.");
-        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("BdApi.Webpack~getModule", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
-        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("BdApi.Webpack~getModule", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
+        if (("first" in options) && typeof(options.first) !== "boolean") return Logger.error("GdApi.Webpack~get", "Unsupported type used for options.first", options.first, "boolean expected.");
+        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("GdApi.Webpack~getModule", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
+        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("GdApi.Webpack~getModule", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
         return WebpackModules.getModule(filter, options);
     },
 
@@ -136,8 +136,8 @@ const Webpack = {
      * @return {any[]}
      */
     getModules(filter, options = {}) {
-        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("BdApi.Webpack~getModules", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
-        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("BdApi.Webpack~getModules", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
+        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("GdApi.Webpack~getModules", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
+        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("GdApi.Webpack~getModules", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
         return WebpackModules.getModule(filter, Object.assign(options, {first: false}));
     },
 
@@ -164,9 +164,9 @@ const Webpack = {
      * @returns {Promise<any>}
      */
     waitForModule(filter, options = {}) {
-        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("BdApi.Webpack~waitForModule", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
-        if (("signal" in options) && !(options.signal instanceof AbortSignal)) return Logger.error("BdApi.Webpack~waitForModule", "Unsupported type used for options.signal", options.signal, "AbortSignal expected.");
-        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("BdApi.Webpack~waitForModule", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
+        if (("defaultExport" in options) && typeof(options.defaultExport) !== "boolean") return Logger.error("GdApi.Webpack~waitForModule", "Unsupported type used for options.defaultExport", options.defaultExport, "boolean expected.");
+        if (("signal" in options) && !(options.signal instanceof AbortSignal)) return Logger.error("GdApi.Webpack~waitForModule", "Unsupported type used for options.signal", options.signal, "AbortSignal expected.");
+        if (("searchExports" in options) && typeof(options.searchExports) !== "boolean") return Logger.error("GdApi.Webpack~waitForModule", "Unsupported type used for options.searchExports", options.searchExports, "boolean expected.");
         return WebpackModules.getLazy(filter, options);
     },
 

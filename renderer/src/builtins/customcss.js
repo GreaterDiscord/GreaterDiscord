@@ -128,7 +128,7 @@ export default new class CustomCSS extends Builtin {
     openDetached(currentCSS) {
         const editorRef = React.createRef();
         const editor = React.createElement(CSSEditor, {
-            id: "bd-floating-editor",
+            id: "gd-floating-editor",
             ref: editorRef,
             css: currentCSS,
             save: this.saveCSS.bind(this),

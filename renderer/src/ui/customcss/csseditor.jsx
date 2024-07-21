@@ -13,7 +13,7 @@ import Detach from "@ui/icons/detach";
 const {useState, useCallback, useEffect, forwardRef, useImperativeHandle, useRef} = React;
 
 
-export default forwardRef(function CssEditor({css, openNative, update, save, onChange: notifyParent, readOnly = false, id = "bd-customcss-editor", openDetached = false}, ref) {
+export default forwardRef(function CssEditor({css, openNative, update, save, onChange: notifyParent, readOnly = false, id = "gd-customcss-editor", openDetached = false}, ref) {
     const editorRef = useRef(null);
     const [hasUnsavedChanges, setUnsaved] = useState(false);
 

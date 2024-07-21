@@ -10,7 +10,7 @@ export default function Slider({value: initialValue, min, max, step, onChange}) 
         setValue(e.target.value);
     }, [onChange]);
 
-    return <div className="bd-slider-wrap">
-        <div className="bd-slider-label">{value}</div><input onChange={change} type="range" className="bd-slider-input" min={min} max={max} step={step} value={value} style={{backgroundSize: (value - min) * 100 / (max - min) + "% 100%"}} />
+    return <div className="gd-slider-wrap">
+        <div className="gd-slider-label">{value}</div><input onChange={change} type="range" className="gd-slider-input" min={min} max={max} step={step} value={value} style={{backgroundSize: (value - min) * 100 / (max - min) + "% 100%"}} />
     </div>;
 }

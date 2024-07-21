@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "デバッグログ",
-                    "note": "コンソールからBetterDiscordフォルダのdebug.logファイルに全てを出力します。"
+                    "note": "コンソールからGreaterDiscordフォルダのdebug.logファイルに全てを出力します。"
                 },
                 "devTools": {
                     "name": "デベロッパーツール",
@@ -230,10 +230,10 @@
     },
     "Updater": {
         "updateFailed": "アップデートに失敗しました！",
-        "updateFailedMessage": "BetterDiscordのアップデートに失敗しました。ホームページ(https://betterdiscord.app/)から最新版のインストーラーをダウンロードして、再インストールしてください。",
+        "updateFailedMessage": "GreaterDiscordのアップデートに失敗しました。ホームページ(https://greaterdiscord.app/)から最新版のインストーラーをダウンロードして、再インストールしてください。",
         "updateSuccessful": "アップデートに成功しました！",
-        "updateAvailable": "BetterDiscordに新しいアップデート(v{{version}})があります。",
-        "addonUpdatesAvailable": "BetterDiscordは{{.type}}のアップデートを{{count}}個見つけました！",
+        "updateAvailable": "GreaterDiscordに新しいアップデート(v{{version}})があります。",
+        "addonUpdatesAvailable": "GreaterDiscordは{{.type}}のアップデートを{{count}}個見つけました！",
         "addonUpdated": "{{name}}がバージョン{{version}}にアップデートされました！",
         "checking": "アップデートを確認",
         "finishedChecking": "アップデートの確認が終了しました！",

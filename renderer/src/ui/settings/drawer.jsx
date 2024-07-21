@@ -6,7 +6,7 @@ import Divider from "@ui/divider";
 
 const {useState, useCallback, useRef} = React;
 
-const baseClassName = "bd-settings-group";
+const baseClassName = "gd-settings-group";
 
 
 export default function Drawer({name, collapsible, shown = true, showDivider, children, titleChildren, onDrawerToggle}) {
@@ -33,7 +33,7 @@ export default function Drawer({name, collapsible, shown = true, showDivider, ch
                 <Title text={name} collapsible={collapsible} onClick={toggleCollapse} isGroup={true}>
                     {titleChildren}
                 </Title>
-                <div className="bd-settings-container" ref={container}>
+                <div className="gd-settings-container" ref={container}>
                     {children}
                 </div>
                 {showDivider && <Divider />}

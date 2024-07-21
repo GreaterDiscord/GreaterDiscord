@@ -25,16 +25,16 @@ const DOMAPI = new DOM();
 const ContextMenuAPI = new ContextMenu();
 
 /**
- * `BdApi` is a globally (`window.BdApi`) accessible object for use by plugins and developers to make their lives easier.
- * @name BdApi
+ * `GdApi` is a globally (`window.GdApi`) accessible object for use by plugins and developers to make their lives easier.
+ * @name GdApi
  */
-export default class BdApi {
+export default class GdApi {
     constructor(pluginName) {
-        if (!pluginName) return BdApi;
+        if (!pluginName) return GdApi;
         if (bounded.has(pluginName)) return bounded.get(pluginName);
         if (typeof(pluginName) !== "string") {
-            Logger.error("BdApi", "Plugin name not a string, returning generic API!");
-            return BdApi;
+            Logger.error("GdApi", "Plugin name not a string, returning generic API!");
+            return GdApi;
         }
 
         // Re-add legacy functions
@@ -63,75 +63,75 @@ export default class BdApi {
 }
 
 // Add legacy functions
-Object.assign(BdApi, Legacy);
+Object.assign(GdApi, Legacy);
 
 /**
  * An instance of {@link AddonAPI} to access plugins.
  * @type AddonAPI
  */
-BdApi.Plugins = PluginAPI;
+GdApi.Plugins = PluginAPI;
 
 /**
  * An instance of {@link AddonAPI} to access themes.
  * @type AddonAPI
  */
-BdApi.Themes = ThemeAPI;
+GdApi.Themes = ThemeAPI;
 
 /**
  * An instance of {@link Patcher} to monkey patch functions.
  * @type Patcher
  */
-BdApi.Patcher = PatcherAPI;
+GdApi.Patcher = PatcherAPI;
 
 /**
  * An instance of {@link Webpack} to search for modules.
  * @type Webpack
  */
-BdApi.Webpack = Webpack;
+GdApi.Webpack = Webpack;
 
 /**
  * An instance of {@link Data} to manage data.
  * @type Data
  */
- BdApi.Data = DataAPI;
+ GdApi.Data = DataAPI;
 
 /**
  * An instance of {@link UI} to create interfaces.
  * @type UI
  */
-BdApi.UI = UI;
+GdApi.UI = UI;
 
 /**
  * An instance of {@link ReactUtils} to work with React.
  * @type ReactUtils
  */
-BdApi.ReactUtils = ReactUtils;
+GdApi.ReactUtils = ReactUtils;
 
 /**
  * An instance of {@link Utils} for general utility functions.
  * @type Utils
  */
-BdApi.Utils = Utils;
+GdApi.Utils = Utils;
 
 /**
  * An instance of {@link DOM} to interact with the DOM.
  * @type DOM
  */
-BdApi.DOM = DOMAPI;
+GdApi.DOM = DOMAPI;
 
 /**
  * An instance of {@link ContextMenu} for interacting with context menus.
  * @type ContextMenu
  */
-BdApi.ContextMenu = ContextMenuAPI;
+GdApi.ContextMenu = ContextMenuAPI;
 
-BdApi.Components = {
+GdApi.Components = {
     get Tooltip() {return DiscordModules.Tooltip;}
 };
 
-BdApi.Net = {fetch};
+GdApi.Net = {fetch};
 
-Object.freeze(BdApi);
-Object.freeze(BdApi.Net);
-Object.freeze(BdApi.prototype);
-Object.freeze(BdApi.Components);
+Object.freeze(GdApi);
+Object.freeze(GdApi.Net);
+Object.freeze(GdApi.prototype);
+Object.freeze(GdApi.Components);

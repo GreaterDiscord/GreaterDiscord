@@ -26,9 +26,9 @@ import UpdaterPanel from "@ui/updater";
 
 const UserSettingsWindow = WebpackModules.getByProps("updateAccount");
 
-const base = "https://api.betterdiscord.app/v2/store/";
+const base = "https://api.greaterdiscord.app/v2/store/";
 const route = r => `${base}${r}s`;
-const redirect = addonId => `https://betterdiscord.app/gh-redirect?id=${addonId}`;
+const redirect = addonId => `https://greaterdiscord.app/gh-redirect?id=${addonId}`;
 
 const getJSON = url => {
     return new Promise(resolve => {
@@ -75,12 +75,12 @@ export class CoreUpdater {
     }
 
     static async checkForUpdate(showNotice = true) {
-        const resp = await fetch(`https://api.github.com/repos/BetterDiscord/BetterDiscord/releases/latest`,{
+        const resp = await fetch(`https://api.github.com/repos/foxypiratecove37350/GreaterDiscord/releases/latest`,{
             method: "GET",
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "User-Agent": "BetterDiscord Updater"
+                "User-Agent": "GreaterDiscord Updater"
             }
         });
 
@@ -104,15 +104,15 @@ export class CoreUpdater {
 
     static async update() {
         try {
-            const asar = this.apiData.assets.find(a => a.name === "betterdiscord.asar");
+            const asar = this.apiData.assets.find(a => a.name === "greaterdiscord.asar");
 
             const buff = await new Promise((resolve, reject) =>
-                request(asar.url, {headers: {"Content-Type": "application/octet-stream", "User-Agent": "BetterDiscord Updater", "Accept": "application/octet-stream"}}, (err, resp, body) => {
+                request(asar.url, {headers: {"Content-Type": "application/octet-stream", "User-Agent": "GreaterDiscord Updater", "Accept": "application/octet-stream"}}, (err, resp, body) => {
                 if (err || resp.statusCode != 200) return reject(err || `${resp.statusCode} ${resp.statusMessage}`);
                 return resolve(body);
             }));
 
-            const asarPath = path.join(DataStore.baseFolder, "betterdiscord.asar");
+            const asarPath = path.join(DataStore.baseFolder, "greaterdiscord.asar");
             const fs = require("original-fs");
             fs.writeFileSync(asarPath, buff);
 

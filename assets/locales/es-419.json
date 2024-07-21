@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Registros de Depuración",
-                    "note": "Envía todo lo que aparece en la consola a un archivo llamado debug.log en la carpeta de BetterDiscord"
+                    "note": "Envía todo lo que aparece en la consola a un archivo llamado debug.log en la carpeta de GreaterDiscord"
                 }
             }
         }

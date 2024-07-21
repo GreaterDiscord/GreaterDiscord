@@ -3,7 +3,7 @@
     opacity: 0.5;
 }
 
-.bd-number-input {
+.gd-number-input {
     display: flex;
     background-color: var(--deprecated-text-input-bg);
     border: 1px solid var(--deprecated-text-input-border);

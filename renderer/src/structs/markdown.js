@@ -13,7 +13,7 @@ export default class SimpleMarkdownExt {
         const originalLink = SMD.defaultRules.link.react;
         const newRules = Utilities.extend({}, SMD.defaultRules, {link: {react: function() {
             const original = Reflect.apply(originalLink, undefined, arguments);
-            original.props.className = "bd-link";
+            original.props.className = "gd-link";
             original.props.target = "_blank";
             original.props.rel = "noopener noreferrer";
             return original;

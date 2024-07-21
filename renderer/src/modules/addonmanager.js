@@ -394,7 +394,7 @@ export default class AddonManager {
 
         const editorRef = React.createRef();
         const editor = React.createElement(AddonEditor, {
-            id: "bd-floating-editor-" + addon.id,
+            id: "gd-floating-editor-" + addon.id,
             ref: editorRef,
             content: content,
             save: this.saveAddon.bind(this, addon),
@@ -411,7 +411,7 @@ export default class AddonManager {
                 editorRef.current.resize();
             },
             title: addon.name,
-            id: "bd-floating-window-" + addon.id,
+            id: "gd-floating-window-" + addon.id,
             className: "floating-addon-window",
             height: 470,
             width: 410,

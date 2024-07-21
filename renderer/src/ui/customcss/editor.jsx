@@ -33,7 +33,7 @@ function buildControl(value, control) {
     return makeButton(control, value);
 }
 
-export default forwardRef(function CodeEditor({value, language: requestedLang = "css", id = "bd-editor", controls = [], onChange: notifyParent}, ref) {
+export default forwardRef(function CodeEditor({value, language: requestedLang = "css", id = "gd-editor", controls = [], onChange: notifyParent}, ref) {
     const language = useMemo(() => {
         const requested = requestedLang.toLowerCase().replace(/ /g, "_");
         if (!languages.includes(requested)) return "css";
@@ -101,7 +101,7 @@ export default forwardRef(function CodeEditor({value, language: requestedLang = 
         else {
 
             const textarea = document.createElement("textarea");
-            textarea.className = "bd-fallback-editor";
+            textarea.className = "gd-fallback-editor";
             textarea.value = value;
 
             setEditor({
@@ -139,8 +139,8 @@ export default forwardRef(function CodeEditor({value, language: requestedLang = 
     const controlsLeft = controls.filter(c => c.side != "right").map(buildControl.bind(null, () => editor?.getValue()));
     const controlsRight = controls.filter(c => c.side == "right").map(buildControl.bind(null, () => editor?.getValue()));
 
-    return <div id="bd-editor-panel" className={theme}>
-                <div id="bd-editor-controls">
+    return <div id="gd-editor-panel" className={theme}>
+                <div id="gd-editor-controls">
                     <div className="controls-section controls-left">
                         {controlsLeft}
                     </div>

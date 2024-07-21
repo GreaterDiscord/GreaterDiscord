@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "Debug Logs",
-                    "note": "Consente che tutto l'output della console venga salvato nel file debug.log nella cartella BetterDiscord."
+                    "note": "Consente che tutto l'output della console venga salvato nel file debug.log nella cartella GreaterDiscord."
                 },
                 "devTools": {
                     "name": "DevTools",
@@ -232,10 +232,10 @@
     },
     "Updater": {
         "updateFailed": "Aggiornamento non riuscito!",
-        "updateFailedMessage": "BetterDiscord non è stato aggiornato. Scarica l'ultima versione del programma di installazione dal nostro sito web (https://betterdiscord.app/) e reinstalla.",
+        "updateFailedMessage": "GreaterDiscord non è stato aggiornato. Scarica l'ultima versione del programma di installazione dal nostro sito web (https://greaterdiscord.app/) e reinstalla.",
         "updateSuccessful": "Aggiornamento riuscito!",
-        "updateAvailable": "BetterDiscord ha un nuovo aggiornamento (v{{version}})",
-        "addonUpdatesAvailable": "BetterDiscord ha trovato aggiornamenti per {{count}} dei tuoi {{type}}s!",
+        "updateAvailable": "GreaterDiscord ha un nuovo aggiornamento (v{{version}})",
+        "addonUpdatesAvailable": "GreaterDiscord ha trovato aggiornamenti per {{count}} dei tuoi {{type}}s!",
         "addonUpdated": "{{name}} è stato aggiornato alla versione {{version}}!",
         "checking": "Controlla aggiornamenti!",
         "finishedChecking": "Controllo degli aggiornamenti finito!",

@@ -1,6 +1,6 @@
 {
-    "name": "@betterdiscord/renderer",
-    "description": "Renderer portion of the BetterDiscord application.",
+    "name": "@greaterdiscord/renderer",
+    "description": "Renderer portion of the GreaterDiscord application.",
     "private": true,
     "main": "src/index.js",
     "scripts": {

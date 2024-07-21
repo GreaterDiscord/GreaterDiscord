@@ -2,7 +2,7 @@ import DataStore from "@modules/datastore";
 
 
 /**
- * `Data` is a simple utility class for the management of plugin data. An instance is available on {@link BdApi}.
+ * `Data` is a simple utility class for the management of plugin data. An instance is available on {@link GdApi}.
  * @type Data
  * @summary {@link Data} is a simple utility class for the management of plugin data.
  * @name Data

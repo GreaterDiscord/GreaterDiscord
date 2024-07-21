@@ -1,9 +1,9 @@
-#bd-editor-panel {
+#gd-editor-panel {
     display: flex;
     flex-direction: column;
 }
 
-#bd-editor-controls button {
+#gd-editor-controls button {
     margin: 0 5px 0 0;
     background: none;
     color: var(--interactive-normal);
@@ -14,20 +14,20 @@
     align-items: center;
 }
 
-#bd-editor-controls button:hover {
+#gd-editor-controls button:hover {
     background: var(--background-modifier-hover);
     color: var(--interactive-hover);
 }
 
-#bd-editor-controls button:active {
+#gd-editor-controls button:active {
     background: var(--background-modifier-active);
 }
 
-#bd-editor-controls button svg {
+#gd-editor-controls button svg {
     fill: currentColor;
 }
 
-#bd-editor-controls {
+#gd-editor-controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,7 @@
 .monaco-editor:not(.rename-box),
 .monaco-editor .overflow-guard,
 .monaco-editor .overlayWidgets,
-#bd-customcss-editor > div > .overflow-guard > div:nth-child(3) {
+#gd-customcss-editor > div > .overflow-guard > div:nth-child(3) {
     width: 100% !important;
 }
 
@@ -88,7 +88,7 @@
     width: 1e+06px !important;
 }
 
-.bd-fallback-editor {
+.gd-fallback-editor {
     height: 100%;
     width: 100%;
     resize: none;

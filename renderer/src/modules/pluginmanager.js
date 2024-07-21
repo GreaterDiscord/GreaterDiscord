@@ -128,7 +128,7 @@ export default new class PluginManager extends AddonManager {
             // Test if the code is valid gracefully
             vm.compileFunction(addon.fileContent, ["require", "module", "exports", "__filename", "__dirname"], {filename: path.basename(filename)});
             addon.fileContent += normalizeExports(addon.exports || addon.name);
-            addon.fileContent += `\n//# sourceURL=betterdiscord://plugins/${addon.filename}`;
+            addon.fileContent += `\n//# sourceURL=greaterdiscord://plugins/${addon.filename}`;
             const wrappedPlugin = new Function(["require", "module", "exports", "__filename", "__dirname"], addon.fileContent); // eslint-disable-line no-new-func
             wrappedPlugin(window.require, module, module.exports, module.filename, this.addonFolder);
             addon.exports = module.exports;

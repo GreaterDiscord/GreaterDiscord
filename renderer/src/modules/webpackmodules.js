@@ -436,7 +436,7 @@ export default class WebpackModules {
      */
     static get require() {
         if (this._require) return this._require;
-        const id = "bd-webpackmodules";
+        const id = "gd-webpackmodules";
         let __discord_webpack_require__;
         if (typeof(webpackJsonp) !== "undefined") {
             __discord_webpack_require__ = window.webpackJsonp.push([[], {

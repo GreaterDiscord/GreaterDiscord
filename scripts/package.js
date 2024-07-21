@@ -11,6 +11,6 @@ module.exports = function(dist) {
         if (currentPkg.name && currentPkg.main && currentPkg.main === "injector.js") return console.log("    ✅ Existing package.json is valid");
         console.log("    ⚠️ Existing package.json is invalid");
     }
-    fs.writeFileSync(pkgFile, JSON.stringify({name: "betterdiscord", main: "injector.js"}));
+    fs.writeFileSync(pkgFile, JSON.stringify({name: "greaterdiscord", main: "injector.js"}));
     console.log("    ✅ Created new package.json");
 };

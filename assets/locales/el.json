@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "Καταγραφές Αποσφαλμάτωσης",
-                    "note": "Εξάγει τα πάντα από την κονσόλα στο αρχείο debug.log στο φάκελο του BetterDiscord"
+                    "note": "Εξάγει τα πάντα από την κονσόλα στο αρχείο debug.log στο φάκελο του GreaterDiscord"
                 },
                 "devTools": {
                     "name": "Εργαλεία Δημιουργού",
@@ -230,10 +230,10 @@
     },
     "Updater": {
         "updateFailed": "Η ενημέρωση Απέτυχε!",
-        "updateFailedMessage": "Το BetterDiscord απέτυχε να ενημερωθεί. Λάβετε την τελευταία έκδοση του προγράμματος εγκατάστασης από την ιστοσελίδα μας (https://betterdiscord.app/) και κάντε επανεγκατάσταση.",
+        "updateFailedMessage": "Το GreaterDiscord απέτυχε να ενημερωθεί. Λάβετε την τελευταία έκδοση του προγράμματος εγκατάστασης από την ιστοσελίδα μας (https://greaterdiscord.app/) και κάντε επανεγκατάσταση.",
         "updateSuccessful": "Η Ενημέρωση ήταν Επιτυχής!",
-        "updateAvailable": "Το BetterDiscord έχει μια νέα ενημερωση (v{{version}})",
-        "addonUpdatesAvailable": "Το BetterDiscord έχει ενημερώσεις για {{count}} από τα {{type}}!",
+        "updateAvailable": "Το GreaterDiscord έχει μια νέα ενημερωση (v{{version}})",
+        "addonUpdatesAvailable": "Το GreaterDiscord έχει ενημερώσεις για {{count}} από τα {{type}}!",
         "addonUpdated": "Το {{name}} έχει ενημερωθεί στην έκδοση {{version}}!",
         "checking": "Έλεγχος για ενημερώσεις!",
         "finishedChecking": "Ολοκλήρωση ελέγχου για ενημερώσεις!",

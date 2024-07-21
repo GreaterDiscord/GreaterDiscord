@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Налагоджувальні журнали",
-                    "note": "Виводить все з консолі у файл debug.log в теці BetterDiscord"
+                    "note": "Виводить все з консолі у файл debug.log в теці GreaterDiscord"
                 }
             }
         }

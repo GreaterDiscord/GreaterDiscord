@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Debug Logs",
-                    "note": "Saída de tudo da consola para o ficheiro debug.log na pasta BetterDiscord"
+                    "note": "Saída de tudo da consola para o ficheiro debug.log na pasta GreaterDiscord"
                 }
             }
         }

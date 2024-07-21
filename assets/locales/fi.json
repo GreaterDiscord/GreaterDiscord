@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "Virheenkorjauksen logit",
-                    "note": "Tulostaa kaiken konsolista BetterDiscord-kansion debug.log-tiedostoon"
+                    "note": "Tulostaa kaiken konsolista GreaterDiscord-kansion debug.log-tiedostoon"
                 },
                 "devTools": {
                     "name": "DevTools",
@@ -228,10 +228,10 @@
     },
     "Updater": {
         "updateFailed": "Päivitys epäonnistui",
-        "updateFailedMessage": "BetterDiscordin päivitys epäonnistui. Lataa asennusohjelman uusin versio verkkosivustoltamme (https://betterdiscord.app/) ja asenna se uudelleen.",
+        "updateFailedMessage": "GreaterDiscordin päivitys epäonnistui. Lataa asennusohjelman uusin versio verkkosivustoltamme (https://greaterdiscord.app/) ja asenna se uudelleen.",
         "updateSuccessful": "Päivittäminen onnistui!",
-        "updateAvailable": "BetterDiscordilla on uusi päivitys",
-        "addonUpdatesAvailable": "BetterDiscord on löytänyt päivityksiä {{count}}:lle {{type}}:lle!",
+        "updateAvailable": "GreaterDiscordilla on uusi päivitys",
+        "addonUpdatesAvailable": "GreaterDiscord on löytänyt päivityksiä {{count}}:lle {{type}}:lle!",
         "addonUpdated": "{{name}} on päivitetty versioon {{version}}!",
         "checking": "Tarkistetaan päivityksiä!",
         "finishedChecking": "Päivitysten tarkistaminen on valmis!",

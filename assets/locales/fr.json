@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Journaux de Débogage",
-                    "note": "Transmet tout ce qui se trouve dans la console au fichier debug.log situé dans le dossier de BetterDiscord"
+                    "note": "Transmet tout ce qui se trouve dans la console au fichier debug.log situé dans le dossier de GreaterDiscord"
                 }
             }
         }

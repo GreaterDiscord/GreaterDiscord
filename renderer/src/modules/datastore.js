@@ -10,7 +10,7 @@ const releaseChannel = window?.DiscordNative?.app?.getReleaseChannel?.() ?? "sta
 
 // Schema
 // =======================
-// %appdata%\BetterDiscord
+// %appdata%\GreaterDiscord
 //     -> data
 //         -> [releaseChannel]\ (stable/canary/ptb)
 //             -> settings.json

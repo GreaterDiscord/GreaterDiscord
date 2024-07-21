@@ -1,7 +1,7 @@
 {
-    "name": "@betterdiscord/injector",
+    "name": "@greaterdiscord/injector",
     "version": "0.6.2",
-    "description": "BetterDiscord injector module",
+    "description": "GreaterDiscord injector module",
     "main": "src/index.js",
     "private": true,
     "scripts": {

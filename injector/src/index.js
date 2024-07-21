@@ -55,6 +55,6 @@ catch (_) {
 
 // Needs to run this after Discord but before ready()
 if (!process.argv.includes("--vanilla")) {
-    const BetterDiscord = require("./modules/betterdiscord").default;
-    BetterDiscord.disableMediaKeys();
+    const GreaterDiscord = require("./modules/greaterdiscord").default;
+    GreaterDiscord.disableMediaKeys();
 }

@@ -1,14 +1,14 @@
-.bd-color-picker-container {
+.gd-color-picker-container {
     display: flex;
 }
 
-.bd-color-picker-controls {
+.gd-color-picker-controls {
     padding-left: 1px;
     padding-top: 2px;
     display: flex;
 }
 
-.bd-color-picker-default {
+.gd-color-picker-default {
     cursor: pointer;
     width: 72px;
     height: 54px;
@@ -20,18 +20,18 @@
     margin-top: 1px;
 }
 
-.bd-color-picker-custom {
+.gd-color-picker-custom {
     position: relative;
     display: inline-table;
 }
 
-.bd-color-picker-custom svg {
+.gd-color-picker-custom svg {
     position: absolute;
     top: 5px;
     right: 5px;
 }
 
-.bd-color-picker {
+.gd-color-picker {
     outline: none;
     width: 70px;
     border: none;
@@ -41,11 +41,11 @@
     cursor: pointer;
 }
 
-.bd-color-picker::-webkit-color-swatch {
+.gd-color-picker::-webkit-color-swatch {
     border: none;
 }
 
-.bd-color-picker-swatch {
+.gd-color-picker-swatch {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -53,7 +53,7 @@
     max-width: 340px;
 }
 
-.bd-color-picker-swatch-item {
+.gd-color-picker-swatch-item {
     cursor: pointer;
     border-radius: 4px;
     width: 23px;

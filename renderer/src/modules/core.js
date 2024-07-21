@@ -32,13 +32,13 @@ export default new class Core {
 
         Config.appPath = process.env.DISCORD_APP_PATH;
         Config.userData = process.env.DISCORD_USER_DATA;
-        Config.dataPath = process.env.BETTERDISCORD_DATA_PATH;
+        Config.dataPath = process.env.GREATERDISCORD_DATA_PATH;
 
-        IPC.getSystemAccentColor().then(value => DOMManager.injectStyle("bd-os-values", `:root {--os-accent-color: #${value};}`));
+        IPC.getSystemAccentColor().then(value => DOMManager.injectStyle("gd-os-values", `:root {--os-accent-color: #${value};}`));
 
         // Load css early
         Logger.log("Startup", "Injecting BD Styles");
-        DOMManager.injectStyle("bd-stylesheet", Styles.toString());
+        DOMManager.injectStyle("gd-stylesheet", Styles.toString());
 
         Logger.log("Startup", "Initializing DataStore");
         DataStore.initialize();

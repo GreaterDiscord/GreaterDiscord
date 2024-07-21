@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Výpis ladenia",
-                    "note": "Zapíše všetko z konzole do súboru debug.log v BetterDiscord zložke"
+                    "note": "Zapíše všetko z konzole do súboru debug.log v GreaterDiscord zložke"
                 }
             }
         }

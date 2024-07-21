@@ -37,9 +37,9 @@ export default new class BDContextMenu extends Builtin {
         if (!target) return;
 
         // Prevent conflict with plugin until its eradicated
-        if (target.some(e => e.props.label.toLowerCase() === "betterdiscord")) return;
+        if (target.some(e => e.props.label.toLowerCase() === "greaterdiscord")) return;
 
-        // BetterDiscord Settings
+        // GreaterDiscord Settings
         const items = Settings.collections.map(c => this.buildCollectionMenu(c));
 
         // Updater
@@ -61,7 +61,7 @@ export default new class BDContextMenu extends Builtin {
         items.push(this.buildAddonMenu(Strings.Panels.themes, themeManager));
 
         // Parent SubMenu
-        const bdSubMenu = ContextMenu.buildItem({type: "submenu", label: "BetterDiscord", items: items});
+        const bdSubMenu = ContextMenu.buildItem({type: "submenu", label: "GreaterDiscord", items: items});
         const bdGroup = React.createElement(ContextMenu.Group, null, [bdSubMenu]);
         target.push(bdGroup);
     }

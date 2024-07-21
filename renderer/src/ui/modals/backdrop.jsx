@@ -27,7 +27,7 @@ export default function Backdrop({isVisible, className, onClick}) {
         if (!visible) return null;
 
         return <Spring.animated.div
-                className={Utilities.className("bd-modal-backdrop", className)}
+                className={Utilities.className("gd-modal-backdrop", className)}
                 style={styles}
                 onClick={onClick}
         />;

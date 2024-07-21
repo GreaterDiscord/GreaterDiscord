@@ -1,4 +1,4 @@
-.bd-search-wrapper {
+.gd-search-wrapper {
     padding: 3px;
     border-radius: 3px;
     outline: none;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.bd-search {
+.gd-search {
     padding: 2px 3px;
     background: none;
     border: 0;
@@ -17,25 +17,25 @@
     flex: 1;
 }
 
-.bd-search::-webkit-input-placeholder {
+.gd-search::-webkit-input-placeholder {
     color: var(--text-muted);
 }
 
-.bd-search-wrapper > svg {
+.gd-search-wrapper > svg {
     margin-right: 2px;
     fill: var(--interactive-normal);
 }
 
-.bd-search-wrapper > .bd-button {
+.gd-search-wrapper > .gd-button {
     margin-right: 2px;
     background: none;
     padding: 0;
 }
 
-.bd-search-wrapper > .bd-button > svg .fill {
+.gd-search-wrapper > .gd-button > svg .fill {
     fill: var(--interactive-normal);
 }
 
-.bd-search-wrapper > .bd-button:hover > svg .fill {
+.gd-search-wrapper > .gd-button:hover > svg .fill {
     fill: var(--interactive-hover);
 }

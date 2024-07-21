@@ -2,7 +2,7 @@ import DOMManager from "@modules/dommanager";
 
 
 /**
- * `DOM` is a simple utility class for dom manipulation. An instance is available on {@link BdApi}.
+ * `DOM` is a simple utility class for dom manipulation. An instance is available on {@link GdApi}.
  * @type DOM
  * @summary {@link DOM} is a simple utility class for dom manipulation.
  * @name DOM

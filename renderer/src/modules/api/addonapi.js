@@ -1,5 +1,5 @@
 /**
- * `AddonAPI` is a utility class for working with plugins and themes. Instances are accessible through the {@link BdApi}.
+ * `AddonAPI` is a utility class for working with plugins and themes. Instances are accessible through the {@link GdApi}.
  * @name AddonAPI
  */
  class AddonAPI {

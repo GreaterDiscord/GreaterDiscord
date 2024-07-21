@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "디버그 로그",
-                    "note": "콘솔의 모든 출력을 BetterDiscord 폴더의 debug.log 파일에 저장합니다"
+                    "note": "콘솔의 모든 출력을 GreaterDiscord 폴더의 debug.log 파일에 저장합니다"
                 },
                 "devTools": {
                     "name": "개발자 도구",
@@ -230,10 +230,10 @@
     },
     "Updater": {
         "updateFailed": "업데이트가 실패했습니다!",
-        "updateFailedMessage": "BetterDiscord가 업데이트에 실패했습니다. 저희 웹사이트 (https://betterdiscord.app/) 에서 설치기를 받아 재설치하십시오.",
+        "updateFailedMessage": "GreaterDiscord가 업데이트에 실패했습니다. 저희 웹사이트 (https://greaterdiscord.app/) 에서 설치기를 받아 재설치하십시오.",
         "updateSuccessful": "업데이트가 성공적으로 완료되었습니다!",
-        "updateAvailable": "BetterDiscord에 새로운 업데이트가 있습니다 (v{{version}})",
-        "addonUpdatesAvailable": "BetterDiscord가 {{.type}}의 업데이트를 {{count}}개 발견했습니다!",
+        "updateAvailable": "GreaterDiscord에 새로운 업데이트가 있습니다 (v{{version}})",
+        "addonUpdatesAvailable": "GreaterDiscord가 {{.type}}의 업데이트를 {{count}}개 발견했습니다!",
         "addonUpdated": "{{name}} 이 버전 {{version}} 으로 업데이트 되었습니다!",
         "checking": "업데이트를 확인하고 있습니다!",
         "finishedChecking": "업데이트 확인을 마쳤습니다!",

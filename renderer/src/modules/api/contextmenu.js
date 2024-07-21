@@ -145,7 +145,7 @@ class MenuPatcher {
 
 
 /**
- * `ContextMenu` is a module to help patch and create context menus. Instance is accessible through the {@link BdApi}.
+ * `ContextMenu` is a module to help patch and create context menus. Instance is accessible through the {@link GdApi}.
  * @type ContextMenu
  * @summary {@link ContextMenu} is a utility class for interacting with React internals.
  * @name ContextMenu

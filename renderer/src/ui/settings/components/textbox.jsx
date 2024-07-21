@@ -10,5 +10,5 @@ export default function Textbox({value: initialValue, maxLength, placeholder, on
         setValue(e.target.value);
     }, [onChange]);
 
-    return <input onChange={change} onKeyDown={onKeyDown} type="text" className="bd-text-input" placeholder={placeholder} maxLength={maxLength} value={value} />;
+    return <input onChange={change} onKeyDown={onKeyDown} type="text" className="gd-text-input" placeholder={placeholder} maxLength={maxLength} value={value} />;
 }

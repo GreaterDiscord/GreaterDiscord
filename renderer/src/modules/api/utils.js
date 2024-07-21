@@ -2,7 +2,7 @@ import Utilities from "@modules/utilities";
 
 
 /**
- * `Utils` is a utility containing commonly reused functions. Instance is accessible through the {@link BdApi}.
+ * `Utils` is a utility containing commonly reused functions. Instance is accessible through the {@link GdApi}.
  * @type Utils
  * @summary {@link Utils} is a utility class for interacting with React internals.
  * @name Utils

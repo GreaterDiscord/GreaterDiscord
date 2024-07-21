@@ -33,21 +33,21 @@ function makeButton(tooltip, children, action, options = {}) {
     };
 
     return <DiscordModules.Tooltip color="primary" position="top" text={tooltip}>
-                {(props) => <Button {...props} className={`bd-update-button ${className}`} size={size} look={look} color={color} onClick={onClick}>{children}</Button>}
+                {(props) => <Button {...props} className={`gd-update-button ${className}`} size={size} look={look} color={color} onClick={onClick}>{children}</Button>}
             </DiscordModules.Tooltip>;
 }
 
 function CoreUpdaterPanel({hasUpdate, remoteVersion, update}) {
-    return <Drawer name="BetterDiscord" collapsible={true}>
+    return <Drawer name="GreaterDiscord" collapsible={true}>
         <SettingItem name={`Core v${Config.version}`} note={hasUpdate ? Strings.Updater.versionAvailable.format({version: remoteVersion}) : Strings.Updater.noUpdatesAvailable} inline={true} id={"core-updater"}>
-            {!hasUpdate && <div className="bd-filled-checkmark"><Checkmark size="18px" /></div>}
+            {!hasUpdate && <div className="gd-filled-checkmark"><Checkmark size="18px" /></div>}
             {hasUpdate && makeButton(Strings.Updater.updateButton, <Download />, update, {className: "no-animation"})}
         </SettingItem>
     </Drawer>;
 }
 
 function NoUpdates({type}) {
-    return <div className="bd-empty-updates">
+    return <div className="gd-empty-updates">
         <Checkmark size="48px" />
         {Strings.Updater.upToDateBlankslate.format({type: type})}
     </div>;
@@ -135,7 +135,7 @@ export default function UpdaterPanel({coreUpdater, pluginUpdater, themeUpdater})
 
     return [
         <SettingsTitle text={Strings.Panels.updates}>
-            {makeButton(Strings.Updater.checkForUpdates, <Sync />, checkForUpdates, {className: "bd-update-check", stopAnimation: true})}
+            {makeButton(Strings.Updater.checkForUpdates, <Sync />, checkForUpdates, {className: "gd-update-check", stopAnimation: true})}
         </SettingsTitle>,
         <CoreUpdaterPanel remoteVersion={coreUpdater.remoteVersion} hasUpdate={hasCoreUpdate} update={updateCore} />,
         <AddonUpdaterPanel type="plugins" pending={updates.plugins} update={updateAddon} updateAll={updateAllAddons} updater={pluginUpdater} />,

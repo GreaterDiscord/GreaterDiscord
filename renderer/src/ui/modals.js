@@ -30,7 +30,7 @@ import ModalStack, {generateKey} from "./modals/stack";
 export default class Modals {
 
     static get shouldShowAddonErrors() {return Settings.get("settings", "addons", "addonErrors");}
-    static get hasModalOpen() {return !!document.getElementsByClassName("bd-modal").length;}
+    static get hasModalOpen() {return !!document.getElementsByClassName("gd-modal").length;}
 
     static get ModalActions() {
         return this._ModalActions ??= WebpackModules.getByProps("openModal", "closeModal", "updateModal");
@@ -54,14 +54,14 @@ export default class Modals {
     }
 
     static default(title, content, buttons = []) {
-        const modal = DOMManager.parseHTML(`<div class="bd-modal-wrapper theme-dark">
-                <div class="bd-backdrop backdrop-1wrmKB"></div>
-                <div class="bd-modal modal-1UGdnR">
-                    <div class="bd-modal-inner inner-1JeGVc">
+        const modal = DOMManager.parseHTML(`<div class="gd-modal-wrapper theme-dark">
+                <div class="gd-backdrop backdrop-1wrmKB"></div>
+                <div class="gd-modal modal-1UGdnR">
+                    <div class="gd-modal-inner inner-1JeGVc">
                         <div class="header header-1R_AjF">
                             <div class="title">${title}</div>
                         </div>
-                        <div class="bd-modal-body">
+                        <div class="gd-modal-body">
                             <div class="scroller-wrap fade">
                                 <div class="scroller"></div>
                             </div>
@@ -104,10 +104,10 @@ export default class Modals {
                     handleClose();
                 },
                 type: "button",
-                className: "bd-button"
+                className: "gd-button"
             });
 
-            if (button.danger) buttonEl.classList.add("bd-button-danger");
+            if (button.danger) buttonEl.classList.add("gd-button-danger");
 
             buttonEl.append(button.label);
             buttonContainer.appendChild(buttonEl);
@@ -132,7 +132,7 @@ export default class Modals {
         }
         
         modal.querySelector(".footer button").addEventListener("click", handleClose);
-        modal.querySelector(".bd-backdrop").addEventListener("click", handleClose);
+        modal.querySelector(".gd-backdrop").addEventListener("click", handleClose);
         
         const handleOpen = () => document.getElementById("app-mount").append(modal);
 
@@ -221,7 +221,7 @@ export default class Modals {
     }
 
     static showChangelogModal(options = {}) {
-        options = Object.assign({image: "https://i.imgur.com/wuh5yMK.png", description: "", changes: [], title: "BetterDiscord", subtitle: `v${Config.version}`}, options);
+        options = Object.assign({image: "https://i.imgur.com/wuh5yMK.png", description: "", changes: [], title: "GreaterDiscord", subtitle: `v${Config.version}`}, options);
 
         const key = this.openModal(props => {
             return React.createElement(ErrorBoundary, null, React.createElement(ChangelogModal, Object.assign(options, props)));
@@ -252,7 +252,7 @@ export default class Modals {
                 render() {
                     if (this.state.hasError) return React.createElement(TextElement, {color: TextElement.Colors.STATUS_RED}, Strings.Addons.settingsError);
                     const props = {
-                        className: "bd-addon-settings-wrap",
+                        className: "gd-addon-settings-wrap",
                         ref: this.elementRef
                     };
                     if (typeof(this.element) === "string") props.dangerouslySetInnerHTML = {__html: this.element};
@@ -263,7 +263,7 @@ export default class Modals {
         if (typeof(child) === "function") child = React.createElement(child);
 
         const options = {
-            className: "bd-addon-modal",
+            className: "gd-addon-modal",
             size: ModalRoot.Sizes.MEDIUM,
             header: `${name} Settings`,
             cancelText: null,
@@ -278,7 +278,7 @@ export default class Modals {
 
 
     static makeStack() {
-        const div = DOMManager.parseHTML(`<div id="bd-modal-container">`);
+        const div = DOMManager.parseHTML(`<div id="gd-modal-container">`);
         DOMManager.bdBody.append(div);
         ReactDOM.render(<ErrorBoundary hideError={true}><ModalStack /></ErrorBoundary>, div);
         this.hasInitialized = true;

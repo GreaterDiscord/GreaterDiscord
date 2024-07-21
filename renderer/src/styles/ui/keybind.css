@@ -1,4 +1,4 @@
-.bd-keybind-wrap {
+.gd-keybind-wrap {
     position: relative;
     min-width: 250px;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-.bd-keybind-wrap input {
+.gd-keybind-wrap input {
     outline: none;
     border: none;
     pointer-events: none;
@@ -21,15 +21,15 @@
     font-weight: 700;
 }
 
-.bd-keybind-wrap.recording {
+.gd-keybind-wrap.recording {
     border-color: hsla(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%, .3);
 }
 
-.bd-keybind-wrap.recording {
+.gd-keybind-wrap.recording {
     box-shadow: 0 0 6px hsla(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%, .3);
 }
 
-.bd-keybind-controls {
+.gd-keybind-controls {
     position: absolute;
     right: 5px;
     top: 3px;
@@ -38,23 +38,23 @@
     gap: 5px;
 }
 
-.bd-keybind-controls .bd-keybind-record {
+.gd-keybind-controls .gd-keybind-record {
     padding: 4px 8px;
 }
 
-.bd-keybind-clear {
+.gd-keybind-clear {
     margin-left: 5px;
     background: none!important;
     opacity: 0.5;
     padding-right: 4px!important;
 }
 
-.bd-keybind-clear:hover {
+.gd-keybind-clear:hover {
     background: none;
     opacity: 1;
 }
 
-.bd-keybind-clear svg {
+.gd-keybind-clear svg {
     width: 18px !important;
     height: 18px !important;
 }

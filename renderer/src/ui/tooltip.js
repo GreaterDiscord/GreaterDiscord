@@ -34,9 +34,9 @@ export default class Tooltip {
         if (!sides.includes(this.side)) return Logger.err("Tooltip", `Side ${this.side} does not exist.`);
         if (!styles.includes(this.style)) return Logger.err("Tooltip", `Style ${this.style} does not exist.`);
  
-        this.element = DOMManager.parseHTML(`<div class="bd-layer">`);
-        this.tooltipElement = DOMManager.parseHTML(`<div class="bd-tooltip"><div class="bd-tooltip-pointer"></div><div class="bd-tooltip-content"></div></div>`);
-        this.tooltipElement.classList.add(`bd-tooltip-${this.style}`);
+        this.element = DOMManager.parseHTML(`<div class="gd-layer">`);
+        this.tooltipElement = DOMManager.parseHTML(`<div class="gd-tooltip"><div class="gd-tooltip-pointer"></div><div class="gd-tooltip-content"></div></div>`);
+        this.tooltipElement.classList.add(`gd-tooltip-${this.style}`);
 
         this.labelElement = this.tooltipElement.childNodes[1];
         if (text instanceof HTMLElement) this.labelElement.append(text);
@@ -124,28 +124,28 @@ export default class Tooltip {
  
     /** Force showing the tooltip above the node. */
     showAbove() {
-        this.tooltipElement.classList.add("bd-tooltip-top");
+        this.tooltipElement.classList.add("gd-tooltip-top");
         this.element.style.setProperty("top", toPx(this.node.getBoundingClientRect().top - this.element.offsetHeight - 10));
         this.centerHorizontally();
     }
  
     /** Force showing the tooltip below the node. */
     showBelow() {
-        this.tooltipElement.classList.add("bd-tooltip-bottom");
+        this.tooltipElement.classList.add("gd-tooltip-bottom");
         this.element.style.setProperty("top", toPx(this.node.getBoundingClientRect().top + this.node.offsetHeight + 10));
         this.centerHorizontally();
     }
  
     /** Force showing the tooltip to the left of the node. */
     showLeft() {
-        this.tooltipElement.classList.add("bd-tooltip-left");
+        this.tooltipElement.classList.add("gd-tooltip-left");
         this.element.style.setProperty("left", toPx(this.node.getBoundingClientRect().left - this.element.offsetWidth - 10));
         this.centerVertically();
     }
  
     /** Force showing the tooltip to the right of the node. */
     showRight() {
-        this.tooltipElement.classList.add("bd-tooltip-right");
+        this.tooltipElement.classList.add("gd-tooltip-right");
         this.element.style.setProperty("left", toPx(this.node.getBoundingClientRect().left + this.node.offsetWidth + 10));
         this.centerVertically();
     }

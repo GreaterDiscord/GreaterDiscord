@@ -55,7 +55,7 @@ body:
     required: true
 - type: input
   attributes:
-    label: BetterDiscord Version
+    label: GreaterDiscord Version
     description: This is found in `Settings > Updater` and will be labelled as the `Core` version.
     placeholder: v1.x.x
   validations:

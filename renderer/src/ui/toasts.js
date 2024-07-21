@@ -43,16 +43,16 @@ export default class Toasts {
             if (!this.shouldShowToasts && !forceShow) return;
             this.ensureContainer();
             const toastElem = document.createElement("div");
-            toastElem.classList.add("bd-toast");
+            toastElem.classList.add("gd-toast");
             if (type) toastElem.classList.add("toast-" + type);
             if (type && icon) toastElem.classList.add("icon");
             toastElem.innerText = content;
-            document.querySelector(".bd-toasts").appendChild(toastElem);
+            document.querySelector(".gd-toasts").appendChild(toastElem);
             setTimeout(() => {
                 toastElem.classList.add("closing");
                 setTimeout(() => {
                     toastElem.remove();
-                    if (!document.querySelectorAll(".bd-toasts .bd-toast").length) document.querySelector(".bd-toasts").remove();
+                    if (!document.querySelectorAll(".gd-toasts .gd-toast").length) document.querySelector(".gd-toasts").remove();
                 }, 300);
             }, timeout);
         }
@@ -62,7 +62,7 @@ export default class Toasts {
     }
 
     static ensureContainer() {
-        if (document.querySelector(".bd-toasts")) return;
+        if (document.querySelector(".gd-toasts")) return;
         const container = document.querySelector(`.${this.ChannelsClass} ~ div:not([style])`);
         const memberlist = container ? container.querySelector(`.${this.MembersWrapClass}`) : null;
         const form = container ? container.querySelector("form") : null;
@@ -71,7 +71,7 @@ export default class Toasts {
         const width = right ? right - container.getBoundingClientRect().left : (container?.offsetWidth ?? document.body.offsetWidth / 2);
         const bottom = form ? form.offsetHeight : 80;
         const toastWrapper = document.createElement("div");
-        toastWrapper.classList.add("bd-toasts");
+        toastWrapper.classList.add("gd-toasts");
         toastWrapper.style.setProperty("left", left + "px");
         toastWrapper.style.setProperty("width", width + "px");
         toastWrapper.style.setProperty("bottom", bottom + "px");

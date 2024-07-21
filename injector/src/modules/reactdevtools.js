@@ -10,7 +10,7 @@ const findLatestVersion = (extensionPath) => {
 };
 
 const findExtension = (dataPath) => {
-    // Default to extensions folder in BetterDiscord folder
+    // Default to extensions folder in GreaterDiscord folder
     const replacementPath = path.resolve(dataPath, "extensions", REACT_DEVTOOLS_ID);
     if (fs.existsSync(replacementPath)) {
         if (fs.existsSync(path.resolve(replacementPath, "manifest.json"))) {

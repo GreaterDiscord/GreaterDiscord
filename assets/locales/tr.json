@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Hata Ayıklama çıktıları",
-                    "note": "Konsoldaki herşeyi BetterDiscord klasöründeki debug.log dosyasına kaydeder"
+                    "note": "Konsoldaki herşeyi GreaterDiscord klasöründeki debug.log dosyasına kaydeder"
                 }
             }
         }

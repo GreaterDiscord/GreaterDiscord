@@ -32,7 +32,7 @@ export default class Logger {
      * @param {Error} error - Error object to log with the message.
      */
     static stacktrace(module, message, error) {
-        console.error(`%c[${module}]%c ${message}\n\n%c`, "color: #3a71c1; font-weight: 700;", "color: red; font-weight: 700;", "color: red;", error);
+        console.error(`%c[${module}]%c ${message}\n\n%c`, "color: #ed4245; font-weight: 700;", "color: red; font-weight: 700;", "color: red;", error);
     }
 
     /**
@@ -92,7 +92,7 @@ export default class Logger {
     static _log(module, message, type = "log") {
         type = Logger.parseType(type);
         if (!Array.isArray(message)) message = [message];
-        console[type](`%c[BetterDiscord]%c [${module}]%c`, "color: #3E82E5; font-weight: 700;", "color: #3a71c1;", "", ...message);
+        console[type](`%c[GreaterDiscord]%c [${module}]%c`, "color: #3E82E5; font-weight: 700;", "color: #ed4245;", "", ...message);
     }
 
     static parseType(type) {

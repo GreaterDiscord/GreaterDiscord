@@ -16,16 +16,16 @@ export default function Radio({name, value, options, onChange}) {
 
     function renderOption(opt, i) {
         const isSelected = index === i;
-        return <label className={"bd-radio-option" + (isSelected ? " bd-radio-selected" : "")}>
+        return <label className={"gd-radio-option" + (isSelected ? " gd-radio-selected" : "")}>
                 <input onChange={change} type="radio" name={name} checked={isSelected} value={i} />
-                {/* <span className="bd-radio-button"></span> */}
-                <RadioIcon className="bd-radio-icon" size="24" checked={isSelected} />
-                <div className="bd-radio-label-wrap">
-                    <div className="bd-radio-label">{opt.name}</div>
-                    <div className="bd-radio-description">{opt.desc || opt.description}</div>
+                {/* <span className="gd-radio-button"></span> */}
+                <RadioIcon className="gd-radio-icon" size="24" checked={isSelected} />
+                <div className="gd-radio-label-wrap">
+                    <div className="gd-radio-label">{opt.name}</div>
+                    <div className="gd-radio-description">{opt.desc || opt.description}</div>
                 </div>
             </label>;
     }
 
-    return <div className="bd-radio-group">{options.map(renderOption)}</div>;
+    return <div className="gd-radio-group">{options.map(renderOption)}</div>;
 }

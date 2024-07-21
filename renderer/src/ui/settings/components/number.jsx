@@ -10,5 +10,5 @@ export default function Number({value: initialValue, min, max, step, onChange}) 
         setValue(e.target.value);
     }, [onChange]);
 
-    return <input onChange={change} type="number" className="bd-number-input" min={min} max={max} step={step} value={value} />;
+    return <input onChange={change} type="number" className="gd-number-input" min={min} max={max} step={step} value={value} />;
 }

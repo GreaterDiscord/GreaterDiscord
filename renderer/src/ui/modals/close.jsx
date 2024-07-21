@@ -6,7 +6,7 @@ import Close from "../icons/close";
 
 export default function CloseButton({onClick}) {
     return <Button
-                className="bd-close-button"
+                className="gd-close-button"
                 size={Button.Sizes.ICON}
                 look={Button.Looks.BLANK}
                 color={Button.Colors.TRANSPARENT}

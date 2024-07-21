@@ -9,7 +9,7 @@ import Edit from "@ui/icons/edit";
 const {useState, useCallback, forwardRef, useImperativeHandle, useRef} = React;
 
 
-export default forwardRef(function AddonEditor({content, language, save, openNative, id = "bd-addon-editor"}, ref) {
+export default forwardRef(function AddonEditor({content, language, save, openNative, id = "gd-addon-editor"}, ref) {
     const editorRef = useRef(null);
     const [hasUnsavedChanges, setUnsaved] = useState(false);
 

@@ -58,7 +58,7 @@ function confirmReset(action) {
 
 function getDebugInfo(discordInfo, pluginsEnabled, themesEnabled) {
     const lines = ["```md", `## Discord Info\n${discordInfo}\n`];
-    lines.push(`## BetterDiscord`);
+    lines.push(`## GreaterDiscord`);
     lines.push(`stable ${Config.version}\n`);
     lines.push(`### Plugins (${pluginsEnabled} Enabled):\n${PluginManager.addonList.map(a => `- ${a.name}${PluginManager.isEnabled(a.id) ? " (Enabled)" : ""}`).join("\n")}\n`);
     lines.push(`### Themes (${themesEnabled} Enabled):\n${ThemeManager.addonList.map(a => `- ${a.name}${ThemeManager.isEnabled(a.id) ? " (Enabled)" : ""}`).join("\n")}`);
@@ -161,13 +161,13 @@ export default new class SettingsRenderer {
                 insert({
                     section: collection.name,
                     label: collection.name.toString(),
-                    className: `bd-${collection.id}-tab`,
+                    className: `gd-${collection.id}-tab`,
                     element: () => this.buildSettingsPanel(collection.id, collection.name, collection.settings, Settings.state[collection.id], Settings.onSettingChange.bind(Settings, collection.id))
                 });
             }
             for (const panel of Settings.panels.sort((a,b) => a.order > b.order ? 1 : -1)) {
                 if (panel.clickListener) panel.onClick = (event) => panel.clickListener(thisObject, event, returnValue);
-                if (!panel.className) panel.className = `bd-${panel.id}-tab`;
+                if (!panel.className) panel.className = `gd-${panel.id}-tab`;
                 if (typeof(panel.label) !== "string") panel.label = panel.label.toString();
                 insert(panel);
             }
@@ -216,7 +216,7 @@ export default new class SettingsRenderer {
 
             Object.assign(reactTree.props, {get copyValue() {return getDebugInfo(currentCopy, pluginCount.enabled, themeCount.enabled);}});
 
-            target.push(<Text color={Text.Colors.MUTED} size={Text.Sizes.SIZE_12}>BetterDiscord {Config.version}</Text>);
+            target.push(<Text color={Text.Colors.MUTED} size={Text.Sizes.SIZE_12}>GreaterDiscord {Config.version}</Text>);
             target.push(<Text color={Text.Colors.MUTED} size={Text.Sizes.SIZE_12}>{Strings.Panels.plugins} {pluginCount.total} ({pluginCount.enabled} {Strings.Addons.isEnabled})</Text>);
             target.push(<Text color={Text.Colors.MUTED} size={Text.Sizes.SIZE_12}>{Strings.Panels.themes} {themeCount.total} ({themeCount.enabled} {Strings.Addons.isEnabled})</Text>);
         });

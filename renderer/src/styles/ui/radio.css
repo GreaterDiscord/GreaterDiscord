@@ -1,8 +1,8 @@
-.bd-radio-group {
+.gd-radio-group {
     min-width: 300px;
 }
 
-.bd-radio-option {
+.gd-radio-option {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -14,16 +14,16 @@
     color: var(--interactive-normal);
 }
 
-.bd-radio-option:hover {
+.gd-radio-option:hover {
     background-color: var(--background-modifier-hover);
 }
 
-.bd-radio-option.bd-radio-selected {
+.gd-radio-option.gd-radio-selected {
     background-color: var(--background-modifier-selected);
     color: var(--interactive-active);
 }
 
-.bd-radio-option input {
+.gd-radio-option input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -31,23 +31,23 @@
     width: 0;
 }
 
-.bd-radio-icon {
+.gd-radio-icon {
     margin-right: 10px;
 }
 
-.bd-radio-label-wrap {
+.gd-radio-label-wrap {
     display: flex;
     flex-direction: column;
 }
 
-.bd-radio-label {
+.gd-radio-label {
     font-family: var(--font-primary);
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
 }
 
-.bd-radio-description {
+.gd-radio-description {
     font-family: var(--font-primary);
     font-size: 14px;
     line-height: 18px;

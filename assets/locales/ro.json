@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Debug Logs",
-                    "note": "Transferă tot din consolă in fișierul debug.log din folderul BetterDiscord"
+                    "note": "Transferă tot din consolă in fișierul debug.log din folderul GreaterDiscord"
                 }
             }
         }

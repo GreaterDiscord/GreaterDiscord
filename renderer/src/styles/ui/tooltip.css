@@ -1,8 +1,8 @@
-.bd-layer {
+.gd-layer {
     position: absolute;
 }
 
-.bd-tooltip {
+.gd-tooltip {
     position: relative;
     border-radius: 5px;
     font-weight: 500;
@@ -17,67 +17,67 @@
     color: var(--header-primary);
 }
 
-.bd-tooltip-content {
+.gd-tooltip-content {
     padding: 8px 12px;
     overflow: hidden;
     }
 
-.bd-tooltip-pointer {
+.gd-tooltip-pointer {
     pointer-events: none;
     width: 0;
     height: 0;
     border: 5px solid transparent;
 }
 
-.bd-tooltip-primary {
+.gd-tooltip-primary {
     background-color: var(--background-floating);
     color: var(--text-normal);
 }
 
-.bd-tooltip-primary .bd-tooltip-pointer {
+.gd-tooltip-primary .gd-tooltip-pointer {
     border-top-color: var(--background-floating);
 }
 
-.bd-tooltip-info {
+.gd-tooltip-info {
     background-color: #4A90E2;
 }
 
-.bd-tooltip-info .bd-tooltip-pointer {
+.gd-tooltip-info .gd-tooltip-pointer {
     border-top-color: #4A90E2;
 }
 
-.bd-tooltip-success {
+.gd-tooltip-success {
     background-color: #43B581;
 }
 
-.bd-tooltip-success .bd-tooltip-pointer {
+.gd-tooltip-success .gd-tooltip-pointer {
     border-top-color: #43B581;
 }
 
-.bd-tooltip-danger {
+.gd-tooltip-danger {
     background-color: #F04747;
 }
 
-.bd-tooltip-danger .bd-tooltip-pointer {
+.gd-tooltip-danger .gd-tooltip-pointer {
     border-top-color: #F04747;
 }
 
-.bd-tooltip-warn {
+.gd-tooltip-warn {
     background-color: #FFA600;
 }
 
-.bd-tooltip-warn .bd-tooltip-pointer {
+.gd-tooltip-warn .gd-tooltip-pointer {
     border-top-color: #FFA600;
 }
 
-.bd-tooltip-top .bd-tooltip-pointer {
+.gd-tooltip-top .gd-tooltip-pointer {
     position: absolute;
     top: 100%;
     left: 50%;
     margin-left: -5px;
 }
 
-.bd-tooltip-bottom .bd-tooltip-pointer {
+.gd-tooltip-bottom .gd-tooltip-pointer {
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -85,7 +85,7 @@
     transform: rotate(180deg);
 }
 
-.bd-tooltip-right .bd-tooltip-pointer {
+.gd-tooltip-right .gd-tooltip-pointer {
     position: absolute;
     right: 100%;
     top: 50%;
@@ -94,7 +94,7 @@
     transform: rotate(90deg);
 }
 
-.bd-tooltip-left .bd-tooltip-pointer {
+.gd-tooltip-left .gd-tooltip-pointer {
     position: absolute;
     left: 100%;
     top: 50%;

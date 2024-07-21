@@ -1,10 +1,10 @@
-.bd-slider-wrap {
+.gd-slider-wrap {
     display: flex;
     color: var(--text-normal);
     align-items: center;
   }
   
-  .bd-slider-label {
+  .gd-slider-label {
     background: var(--brand-experiment);
     font-weight: 700;
     padding: 5px;
@@ -12,7 +12,7 @@
     border-radius: 5px;
   }
   
-  .bd-slider-input {
+  .gd-slider-input {
     /* -webkit-appearance: none;  */
     height: 8px;
     border-radius: 4px;
@@ -28,7 +28,7 @@
   }
   
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .bd-slider-input::-webkit-slider-thumb {
+  .gd-slider-input::-webkit-slider-thumb {
     appearance: none;
     width: 10px;
     height: 24px;

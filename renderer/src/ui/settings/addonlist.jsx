@@ -46,7 +46,7 @@ function openFolder(folder) {
 }
 
 function blankslate(type, onClick) {
-    const message = Strings.Addons.blankSlateMessage.format({link: `https://betterdiscord.app/${type}s`, type}).toString();
+    const message = Strings.Addons.blankSlateMessage.format({link: `https://greaterdiscord.app/${type}s`, type}).toString();
     return <EmptyImage title={Strings.Addons.blankSlateHeader.format({type})} message={message}>
         <Button size={Button.Sizes.LARGE} onClick={onClick}>{Strings.Addons.openFolder.format({type})}</Button>
     </EmptyImage>;
@@ -54,14 +54,14 @@ function blankslate(type, onClick) {
 
 function makeBasicButton(title, children, action) {
     return <DiscordModules.Tooltip color="primary" position="top" text={title}>
-                {(props) => <Button {...props} size={Button.Sizes.NONE} look={Button.Looks.BLANK} className="bd-button" onClick={action}>{children}</Button>}
+                {(props) => <Button {...props} size={Button.Sizes.NONE} look={Button.Looks.BLANK} className="gd-button" onClick={action}>{children}</Button>}
             </DiscordModules.Tooltip>;
 }
 
 function makeControlButton(title, children, action, selected = false) {
     return <DiscordModules.Tooltip color="primary" position="top" text={title}>
                 {(props) => {
-                    return <Button {...props} size={Button.Sizes.NONE} look={Button.Looks.BLANK} className={"bd-button bd-view-button" + (selected ? " selected" : "")} onClick={action}>{children}</Button>;
+                    return <Button {...props} size={Button.Sizes.NONE} look={Button.Looks.BLANK} className={"gd-button gd-view-button" + (selected ? " selected" : "")} onClick={action}>{children}</Button>;
                 }}
             </DiscordModules.Tooltip>;
 }
@@ -195,25 +195,25 @@ export default function AddonList({prefix, type, title, folder, addonList, addon
         <SettingsTitle key="title" text={isSearching ? `${title} - ${Strings.Addons.results.format({count: `${renderedCards.length}`})}` : title}>
             <Search onChange={search} placeholder={`${Strings.Addons.search.format({type: `${renderedCards.length} ${title}`})}...`} />
         </SettingsTitle>,
-        <div className={"bd-controls bd-addon-controls"}>
+        <div className={"gd-controls gd-addon-controls"}>
             {/* <Search onChange={search} placeholder={`${Strings.Addons.search.format({type: title})}...`} /> */}
-            <div className="bd-controls-basic">
+            <div className="gd-controls-basic">
                 {makeBasicButton(Strings.Addons.openFolder.format({type: title}), <FolderIcon />, openFolder.bind(null, folder))}
                 {makeBasicButton(Strings.Addons.enableAll, <CheckIcon size="20px" />, confirmEnable(enableAll, title))}
                 {makeBasicButton(Strings.Addons.disableAll, <CloseIcon size="20px" />, disableAll)}
             </div>
-            <div className="bd-controls-advanced">
-                <div className="bd-addon-dropdowns">
-                    <div className="bd-select-wrapper">
-                        <label className="bd-label">{Strings.Sorting.sortBy}:</label>
+            <div className="gd-controls-advanced">
+                <div className="gd-addon-dropdowns">
+                    <div className="gd-select-wrapper">
+                        <label className="gd-label">{Strings.Sorting.sortBy}:</label>
                         <Dropdown options={buildSortOptions()} value={sort} onChange={changeSort} style="transparent" />
                     </div>
-                    <div className="bd-select-wrapper">
-                        <label className="bd-label">{Strings.Sorting.order}:</label>
+                    <div className="gd-select-wrapper">
+                        <label className="gd-label">{Strings.Sorting.order}:</label>
                         <Dropdown options={buildDirectionOptions()} value={ascending} onChange={changeDirection} style="transparent" />
                     </div>
                 </div>
-                <div className="bd-addon-views">
+                <div className="gd-addon-views">
                     {makeControlButton(Strings.Addons.listView, <ListIcon />, listView, view === "list")}
                     {makeControlButton(Strings.Addons.gridView, <GridIcon />, gridView, view === "grid")}
                 </div>
@@ -221,6 +221,6 @@ export default function AddonList({prefix, type, title, folder, addonList, addon
         </div>,
         !hasAddonsInstalled && blankslate(type, () => openFolder(folder)),
         isSearching && !hasResults && hasAddonsInstalled && <NoResults />,
-        hasAddonsInstalled && <div key="addonList" className={"bd-addon-list" + (view == "grid" ? " bd-grid-view" : "")}>{renderedCards}</div>
+        hasAddonsInstalled && <div key="addonList" className={"gd-addon-list" + (view == "grid" ? " gd-grid-view" : "")}>{renderedCards}</div>
     ];
 }

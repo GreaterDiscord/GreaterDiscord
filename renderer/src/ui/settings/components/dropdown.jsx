@@ -32,17 +32,17 @@ export default function Select({value: initialValue, options, style, onChange}) 
 
     // ?? options[0] provides a double failsafe
     const selected = options.find(o => o.value == value) ?? options[0];
-    const optionComponents = <div className="bd-select-options">
+    const optionComponents = <div className="gd-select-options">
             {options.map(opt =>
-                <div className={`bd-select-option${selected.value == opt.value ? " selected" : ""}`} onClick={() => change(opt.value)}>{opt.label}</div>
+                <div className={`gd-select-option${selected.value == opt.value ? " selected" : ""}`} onClick={() => change(opt.value)}>{opt.label}</div>
             )}
         </div>;
 
-    const styleClass = style == "transparent" ? " bd-select-transparent" : "";
+    const styleClass = style == "transparent" ? " gd-select-transparent" : "";
     const isOpen = open ? " menu-open" : "";
-    return <div className={`bd-select${styleClass}${isOpen}`} onClick={showMenu}>
-                <div className="bd-select-value">{selected.label}</div>
-                <Arrow className="bd-select-arrow" />
+    return <div className={`gd-select${styleClass}${isOpen}`} onClick={showMenu}>
+                <div className="gd-select-value">{selected.label}</div>
+                <Arrow className="gd-select-arrow" />
                 {open && optionComponents}
             </div>;
 }

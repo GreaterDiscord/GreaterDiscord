@@ -101,7 +101,7 @@
                 },
                 "debugLogs": {
                     "name": "偵錯記錄檔",
-                    "note": "輸出控制台中的所有資訊到 BetterDiscord 資料夾下的 debug.log"
+                    "note": "輸出控制台中的所有資訊到 GreaterDiscord 資料夾下的 debug.log"
                 },
                 "devTools": {
                     "name": "DevTools",
@@ -233,10 +233,10 @@
     },
     "Updater": {
         "updateFailed": "更新失敗！",
-        "updateFailedMessage": "BetterDiscord 更新失敗。請從我們的網站 (https://betterdiscord.app/) 下載最新版本的安裝程式並重新安裝。",
+        "updateFailedMessage": "GreaterDiscord 更新失敗。請從我們的網站 (https://greaterdiscord.app/) 下載最新版本的安裝程式並重新安裝。",
         "updateSuccessful": "更新成功！",
-        "updateAvailable": "BetterDiscord 已有新的版本 ({{version}})",
-        "addonUpdatesAvailable": "BetterDiscord 已為您 {{type}} 中的 {{count}} 找到更新！",
+        "updateAvailable": "GreaterDiscord 已有新的版本 ({{version}})",
+        "addonUpdatesAvailable": "GreaterDiscord 已為您 {{type}} 中的 {{count}} 找到更新！",
         "addonUpdated": "{{name}} 已更新到版本 {{version}}！",
         "checking": "正在檢查更新！",
         "finishedChecking": "已完成檢查更新！",

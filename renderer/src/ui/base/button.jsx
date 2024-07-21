@@ -10,33 +10,33 @@ import Utilities from "@modules/utilities";
 const {useCallback} = React;
 
 export const Looks = Object.freeze({
-    FILLED: "bd-button-filled",
-    OUTLINED: "bd-button-outlined",
-    LINK: "bd-button-link",
-    BLANK: "bd-button-blank"
+    FILLED: "gd-button-filled",
+    OUTLINED: "gd-button-outlined",
+    LINK: "gd-button-link",
+    BLANK: "gd-button-blank"
 });
 
 export const Colors = Object.freeze({
-    BRAND: "bd-button-color-brand",
-    BLURPLE: "bd-button-color-blurple",
-    RED: "bd-button-color-red",
-    GREEN: "bd-button-color-green",
-    YELLOW: "bd-button-color-yellow",
-    PRIMARY: "bd-button-color-primary",
-    LINK: "bd-button-color-link",
-    WHITE: "bd-button-color-white",
-    TRANSPARENT: "bd-button-color-transparent",
+    BRAND: "gd-button-color-brand",
+    BLURPLE: "gd-button-color-blurple",
+    RED: "gd-button-color-red",
+    GREEN: "gd-button-color-green",
+    YELLOW: "gd-button-color-yellow",
+    PRIMARY: "gd-button-color-primary",
+    LINK: "gd-button-color-link",
+    WHITE: "gd-button-color-white",
+    TRANSPARENT: "gd-button-color-transparent",
     CUSTOM: ""
 });
 
 
 export const Sizes = Object.freeze({
     NONE: "",
-    TINY: "bd-button-tiny",
-    SMALL: "bd-button-small",
-    MEDIUM: "bd-button-medium",
-    LARGE: "bd-button-large",
-    ICON: "bd-button-icon"
+    TINY: "gd-button-tiny",
+    SMALL: "gd-button-small",
+    MEDIUM: "gd-button-medium",
+    LARGE: "gd-button-large",
+    ICON: "gd-button-icon"
 });
 
 
@@ -63,19 +63,19 @@ export default function Button({
     
     return <button {...others} className={
         Utilities.className(
-            "bd-button",
+            "gd-button",
             className,
             look,
             color,
             size,
-            grow ? "bd-button-grow" : ""
+            grow ? "gd-button-grow" : ""
         )}
         ref={buttonRef}
         type={type === "button" ? null : type}
         onClick={disabled ? () => {} : handleClick}
         onKeyDown={disabled ? () => {} : onKeyDown}
         >
-        <div className="bd-button-content">{children}</div>
+        <div className="gd-button-content">{children}</div>
     </button>;
 }
 
@@ -91,14 +91,14 @@ Button.Sizes = Sizes;
 //             if (!window.BDButton.Colors[color]) continue;
 //             for (const size in window.BDButton.Sizes) {
 //                 if (!window.BDButton.Sizes[size]) continue;
-//                 buttons.push(window.BdApi.React.createElement(window.BDButton, {
+//                 buttons.push(window.GdApi.React.createElement(window.BDButton, {
 //                     look: window.BDButton.Looks[look],
 //                     color: window.BDButton.Colors[color],
 //                     size: window.BDButton.Sizes[size]
 //                 }, "Hello World!"));
-//                 buttons.push(window.BdApi.React.createElement("br"));
+//                 buttons.push(window.GdApi.React.createElement("br"));
 //             }
 //         }
 //     }
-//     window.BdApi.showConfirmationModal("Buttons", buttons);
+//     window.GdApi.showConfirmationModal("Buttons", buttons);
 // })();

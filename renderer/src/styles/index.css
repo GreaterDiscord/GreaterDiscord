@@ -8,27 +8,27 @@
 @import "./search.css";
 @import "./text.css";
 
-.bd-chat-badge {
+.gd-chat-badge {
     vertical-align: bottom;
     line-height: 1.375rem;
     display: inline-block;
     height: 1.25rem;
 }
 
-.bd-member-badge {
+.gd-member-badge {
     height: 15px;
     margin-left: 4px;
 }
 
-.bd-link {
+.gd-link {
     text-decoration: none;
 }
 
-.bd-link:hover {
+.gd-link:hover {
     text-decoration: underline;
 }
 
-.bd-divider {
+.gd-divider {
     width: 100%;
     height: 1px;
     border-top: thin solid var(--background-modifier-accent);

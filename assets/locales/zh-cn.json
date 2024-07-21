@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "调试日志",
-                    "note": "输出控制台中的所有信息到 BetterDiscord 文件夹下的 debug.log 文件"
+                    "note": "输出控制台中的所有信息到 GreaterDiscord 文件夹下的 debug.log 文件"
                 }
             }
         }

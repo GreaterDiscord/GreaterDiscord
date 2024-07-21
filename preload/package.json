@@ -1,7 +1,7 @@
 {
-    "name": "@betterdiscord/preload",
+    "name": "@greaterdiscord/preload",
     "version": "0.0.1",
-    "description": "BetterDiscord preload module",
+    "description": "GreaterDiscord preload module",
     "main": "src/index.js",
     "private": true,
     "scripts": {

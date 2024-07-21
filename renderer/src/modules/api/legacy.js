@@ -17,14 +17,14 @@ import Modals from "@ui/modals";
 /** 
  * The React module being used inside Discord.
  * @type React
- * @memberof BdApi
+ * @memberof GdApi
  */
 const React = DiscordModules.React;
 
 /** 
  * The ReactDOM module being used inside Discord.
  * @type ReactDOM
- * @memberof BdApi
+ * @memberof GdApi
  */
 const ReactDOM = DiscordModules.ReactDOM;
 
@@ -32,7 +32,7 @@ const ReactDOM = DiscordModules.ReactDOM;
  * A reference object to get BD's settings.
  * @type object
  * @deprecated
- * @memberof BdApi
+ * @memberof GdApi
  */
 const settings = Settings.collections;
 
@@ -40,14 +40,14 @@ const settings = Settings.collections;
  * A reference object for BD's emotes.
  * @type object
  * @deprecated
- * @memberof BdApi
+ * @memberof GdApi
  */
 const emotes = {};
 
 /** 
  * A reference string for BD's version.
  * @type string
- * @memberof BdApi
+ * @memberof GdApi
  */
 const version = Config.version;
 
@@ -58,7 +58,7 @@ const version = Config.version;
  * @deprecated
  * @param {string} id ID to use for style element
  * @param {string} css CSS to apply to the document
- * @memberof BdApi
+ * @memberof GdApi
  */
 function injectCSS(id, css) {
     DOMManager.injectStyle(id, css);
@@ -69,7 +69,7 @@ function injectCSS(id, css) {
  * 
  * @deprecated
  * @param {string} id ID uses for the style element
- * @memberof BdApi
+ * @memberof GdApi
  */
 function clearCSS(id) {
     DOMManager.removeStyle(id);
@@ -82,7 +82,7 @@ function clearCSS(id) {
  * @param {string} id ID of the script element
  * @param {string} url URL of the remote script
  * @returns {Promise} Resolves upon onload event
- * @memberof BdApi
+ * @memberof GdApi
  */
 function linkJS(id, url) {
     return DOMManager.injectScript(id, url);
@@ -93,7 +93,7 @@ function linkJS(id, url) {
  * 
  * @deprecated
  * @param {string} id ID of the script element
- * @memberof BdApi
+ * @memberof GdApi
  */
 function unlinkJS(id) {
     DOMManager.removeScript(id);
@@ -105,7 +105,7 @@ function unlinkJS(id) {
  * @deprecated
  * @param {string} title Title of the modal
  * @param {(string|ReactElement|Array<string|ReactElement>)} content A string of text to display in the modal
- * @memberof BdApi
+ * @memberof GdApi
  */
 function alert(title, content) {
     Modals.alert(title, content);
@@ -124,7 +124,7 @@ function alert(title, content) {
  * @param {callable} [options.onConfirm=NOOP] Callback to occur when clicking the submit button
  * @param {callable} [options.onCancel=NOOP] Callback to occur when clicking the cancel button
  * @returns {string} The key used for this modal
- * @memberof BdApi
+ * @memberof GdApi
  */
 function showConfirmationModal(title, content, options = {}) {
     return Modals.showConfirmationModal(title, content, options);
@@ -140,7 +140,7 @@ function showConfirmationModal(title, content, options = {}) {
  * @param {boolean} [options.icon=true] Determines whether the icon should show corresponding to the type. A toast without type will always have no icon. Default: `true`.
  * @param {number} [options.timeout=3000] Adjusts the time (in ms) the toast should be shown for before disappearing automatically. Default: `3000`.
  * @param {boolean} [options.forceShow=false] Whether to force showing the toast and ignore the BD setting
- * @memberof BdApi
+ * @memberof GdApi
  */
 function showToast(content, options = {}) {
     Toasts.show(content, options);
@@ -156,7 +156,7 @@ function showToast(content, options = {}) {
  * @param {Array<{label: string, onClick: function}>} [options.buttons] Buttons that should be added next to the notice text
  * @param {number} [options.timeout=10000] Timeout until the notice is closed. Will not fire when set to `0`.
  * @returns {function} A callback for closing the notice. Passing `true` as first parameter closes immediately without transitioning out.
- * @memberof BdApi
+ * @memberof GdApi
  */
  function showNotice(content, options = {}) {
     return Notices.show(content, options);
@@ -168,7 +168,7 @@ function showToast(content, options = {}) {
  * @deprecated
  * @param {function} filter A filter given the exports, module, and moduleId. Returns `true` if the module matches.
  * @returns {any} Either the matching module or `undefined`
- * @memberof BdApi
+ * @memberof GdApi
  */
 function findModule(filter) {
     return WebpackModules.getModule(filter);
@@ -180,7 +180,7 @@ function findModule(filter) {
  * @deprecated
  * @param {function} filter A filter given the exports, module, and moduleId. Returns `true` if the module matches.
  * @returns {Array} Either an array of matching modules or an empty array
- * @memberof BdApi
+ * @memberof GdApi
  */
 function findAllModules(filter) {
     return WebpackModules.getModule(filter, {first: false});
@@ -192,7 +192,7 @@ function findAllModules(filter) {
  * @deprecated
  * @param {...string} props Any desired properties
  * @returns {any} Either the matching module or `undefined`
- * @memberof BdApi
+ * @memberof GdApi
  */
 function findModuleByProps(...props) {
     return WebpackModules.getByProps(...props);
@@ -205,7 +205,7 @@ function findModuleByProps(...props) {
  * @deprecated
  * @param {...string} protos Any desired prototype properties
  * @returns {any} Either the matching module or `undefined`
- * @memberof BdApi
+ * @memberof GdApi
  */
 function findModuleByPrototypes(...protos) {
     return WebpackModules.getByPrototypes(...protos);
@@ -217,7 +217,7 @@ function findModuleByPrototypes(...protos) {
  * @deprecated
  * @param {string} name Desired `displayName` property
  * @returns {any} Either the matching module or `undefined`
- * @memberof BdApi
+ * @memberof GdApi
  */
 function findModuleByDisplayName(name) {
     return WebpackModules.getByDisplayName(name);
@@ -229,7 +229,7 @@ function findModuleByDisplayName(name) {
  * @deprecated
  * @param {HTMLElement} node Node to get the internal React data from.
  * @returns {object|undefined} Either the found data or `undefined`
- * @memberof BdApi
+ * @memberof GdApi
  */
 function getInternalInstance(node) {
     if (node.__reactInternalInstance$) return node.__reactInternalInstance$;
@@ -243,7 +243,7 @@ function getInternalInstance(node) {
  * @param {string} pluginName Name of the plugin loading data
  * @param {string} key Which piece of data to load
  * @returns {any} The stored data
- * @memberof BdApi
+ * @memberof GdApi
  */
 function loadData(pluginName, key) {
     return DataStore.getPluginData(pluginName, key);
@@ -256,7 +256,7 @@ function loadData(pluginName, key) {
  * @param {string} pluginName Name of the plugin saving data
  * @param {string} key Which piece of data to store
  * @param {any} data The data to be saved
- * @memberof BdApi
+ * @memberof GdApi
  */
 function saveData(pluginName, key, data) {
     return DataStore.setPluginData(pluginName, key, data);
@@ -268,7 +268,7 @@ function saveData(pluginName, key, data) {
  * @deprecated
  * @param {string} pluginName Name of the plugin deleting data
  * @param {string} key Which piece of data to delete
- * @memberof BdApi
+ * @memberof GdApi
  */
 function deleteData(pluginName, key) {
     DataStore.deletePluginData(pluginName, key);
@@ -290,12 +290,12 @@ function deleteData(pluginName, key) {
  * @param {boolean} [options.once=false] Set to `true` if you want to automatically unpatch method after first call
  * @param {boolean} [options.silent=false] Set to `true` if you want to suppress log messages about patching and unpatching
  * @returns {function} A function that cancels the monkey patch
- * @memberof BdApi
+ * @memberof GdApi
  */
 function monkeyPatch(what, methodName, options) {
-    const {before, after, instead, once = false, callerId = "BdApi"} = options;
+    const {before, after, instead, once = false, callerId = "GdApi"} = options;
     const patchType = before ? "before" : after ? "after" : instead ? "instead" : "";
-    if (!patchType) return Logger.err("BdApi", "Must provide one of: after, before, instead");
+    if (!patchType) return Logger.err("GdApi", "Must provide one of: after, before, instead");
     const originalMethod = what[methodName];
     const data = {
         originalMethod: originalMethod,
@@ -323,7 +323,7 @@ function monkeyPatch(what, methodName, options) {
  * @deprecated
  * @param {HTMLElement} node Node to be observed
  * @param {function} callback Function to run when removed
- * @memberof BdApi
+ * @memberof GdApi
  */
 function onRemoved(node, callback) {
     return DOMManager.onRemoved(node, callback);
@@ -336,7 +336,7 @@ function onRemoved(node, callback) {
  * @param {function} method Function to wrap
  * @param {string} message Additional message to print when an error occurs
  * @returns {function} The new wrapped function
- * @memberof BdApi
+ * @memberof GdApi
  */
 function suppressErrors(method, message) {
     return (...params) => {
@@ -351,7 +351,7 @@ function suppressErrors(method, message) {
  * @deprecated
  * @param {object} data Data to be tested
  * @returns {boolean} Result of the test
- * @memberof BdApi
+ * @memberof GdApi
  */
 function testJSON(data) {
     try {
@@ -370,70 +370,70 @@ function testJSON(data) {
  * @param {string} category Category ID in the collection
  * @param {string} id Setting ID in the category
  * @returns {boolean} If the setting is enabled
- * @memberof BdApi
+ * @memberof GdApi
  */
 function isSettingEnabled(collection, category, id) {
     return Settings.get(collection, category, id);
 }
 
 /**
- * Enables a BetterDiscord setting by IDs.
+ * Enables a GreaterDiscord setting by IDs.
  * 
  * @deprecated
  * @param {string} [collection="settings"] Collection ID
  * @param {string} category Category ID in the collection
  * @param {string} id Setting ID in the category
- * @memberof BdApi
+ * @memberof GdApi
  */
 function enableSetting(collection, category, id) {
     return Settings.set(collection, category, id, true);
 }
 
 /**
- * Disables a BetterDiscord setting by IDs.
+ * Disables a GreaterDiscord setting by IDs.
  * 
  * @deprecated
  * @param {string} [collection="settings"] Collection ID
  * @param {string} category Category ID in the collection
  * @param {string} id Setting ID in the category
- * @memberof BdApi
+ * @memberof GdApi
  */
 function disableSetting(collection, category, id) {
     return Settings.set(collection, category, id, false);
 }
 
 /**
- * Toggles a BetterDiscord setting by IDs.
+ * Toggles a GreaterDiscord setting by IDs.
  * 
  * @deprecated
  * @param {string} [collection="settings"] Collection ID
  * @param {string} category Category ID in the collection
  * @param {string} id Setting ID in the category
- * @memberof BdApi
+ * @memberof GdApi
  */
 function toggleSetting(collection, category, id) {
     return Settings.set(collection, category, id, !Settings.get(collection, category, id));
 }
 
 /**
- * Gets some data in BetterDiscord's misc data.
+ * Gets some data in GreaterDiscord's misc data.
  * 
  * @deprecated
  * @param {string} key Key of the data to load
  * @returns {any} The stored data
- * @memberof BdApi
+ * @memberof GdApi
  */
 function getBDData(key) {
     return DataStore.getBDData(key);
 }
 
 /**
- * Sets some data in BetterDiscord's misc data.
+ * Sets some data in GreaterDiscord's misc data.
  * 
  * @deprecated
  * @param {string} key Key of the data to store
  * @returns {any} The stored data
- * @memberof BdApi
+ * @memberof GdApi
  */
 function setBDData(key, data) {
     return DataStore.setBDData(key, data);
@@ -458,7 +458,7 @@ function setBDData(key, data) {
  * @param {boolean} [options.multiSelections=false] Whether the user should be able to select multiple targets
  * @param {boolean} [options.modal=false] Whether the dialog should act as a modal to the main window
  * @returns {Promise<object>} Result of the dialog
- * @memberof BdApi
+ * @memberof GdApi
  */
 async function openDialog(options) {
     const data = await ipc.openDialog(options);

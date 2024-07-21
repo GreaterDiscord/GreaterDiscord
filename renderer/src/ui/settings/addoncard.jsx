@@ -66,7 +66,7 @@ function makeButton(title, children, action, {isControl = false, danger = false,
     const ButtonType = isControl ? "button" : "div";
     return <DiscordModules.Tooltip color="primary" position="top" text={title}>
                 {(props) => {
-                    return <ButtonType {...props} className={(isControl ? "bd-button bd-button-filled bd-addon-button" : "bd-addon-button") + (danger ? " bd-button-color-red" : isControl ? " bd-button-color-brand" : "") + (disabled ? " bd-button-disabled" : "")} onClick={action} disabled={disabled}>{children}</ButtonType>;
+                    return <ButtonType {...props} className={(isControl ? "gd-button gd-button-filled gd-addon-button" : "gd-addon-button") + (danger ? " gd-button-color-red" : isControl ? " gd-button-color-brand" : "") + (disabled ? " gd-button-disabled" : "")} onClick={action} disabled={disabled}>{children}</ButtonType>;
                 }}
             </DiscordModules.Tooltip>;
 }
@@ -74,7 +74,7 @@ function makeButton(title, children, action, {isControl = false, danger = false,
 function buildLink(type, url) {
     if (!url) return null;
     const icon = React.createElement(LinkIcons[type]);
-    const link = <a className="bd-link bd-link-website" href={url} target="_blank" rel="noopener noreferrer">{icon}</a>;
+    const link = <a className="gd-link gd-link-website" href={url} target="_blank" rel="noopener noreferrer">{icon}</a>;
     if (type == "invite") {
         link.props.onClick = function(event) {
             event.preventDefault();
@@ -138,16 +138,16 @@ export default function AddonCard({addon, prefix, type, disabled, enabled: initi
     const title = useMemo(() => {
         const authorArray = Strings.Addons.byline.split(/({{[A-Za-z]+}})/);
         const authorComponent = addon.authorLink || addon.authorId
-                                ? <a className="bd-link bd-link-website" href={addon.authorLink || null} onClick={messageAuthor} target="_blank" rel="noopener noreferrer">{getString(addon.author)}</a>
-                                : <span className="bd-author">{getString(addon.author)}</span>;
+                                ? <a className="gd-link gd-link-website" href={addon.authorLink || null} onClick={messageAuthor} target="_blank" rel="noopener noreferrer">{getString(addon.author)}</a>
+                                : <span className="gd-author">{getString(addon.author)}</span>;
 
         const authorIndex = authorArray.findIndex(s => s == "{{author}}");
         if (authorIndex) authorArray[authorIndex] = authorComponent;
 
         return [
-            <div className="bd-name">{getString(addon.name)}</div>,
-            <div className="bd-meta">
-                <span className="bd-version">v{getString(addon.version)}</span>
+            <div className="gd-name">{getString(addon.name)}</div>,
+            <div className="gd-meta">
+                <span className="gd-version">v{getString(addon.version)}</span>
                 {authorArray}
             </div>
         ];
@@ -156,9 +156,9 @@ export default function AddonCard({addon, prefix, type, disabled, enabled: initi
     const footer = useMemo(() => {
         const links = Object.keys(LinkIcons);
         const linkComponents = links.map(l => buildLink(l, addon[l])).filter(c => c);
-        return <div className="bd-footer">
-                    <span className="bd-links">{linkComponents}</span> 
-                    <div className="bd-controls">
+        return <div className="gd-footer">
+                    <span className="gd-links">{linkComponents}</span> 
+                    <div className="gd-controls">
                         {hasSettings && makeButton(Strings.Addons.addonSettings, <CogIcon size={"20px"} />, showSettings, {isControl: true, disabled: !isEnabled})}
                         {editAddon && makeButton(Strings.Addons.editAddon, <EditIcon size={"20px"} />, editAddon, {isControl: true})}
                         {deleteAddon && makeButton(Strings.Addons.deleteAddon, <DeleteIcon size={"20px"} />, deleteAddon, {isControl: true, danger: true})}
@@ -166,15 +166,15 @@ export default function AddonCard({addon, prefix, type, disabled, enabled: initi
                 </div>;
     }, [hasSettings, editAddon, deleteAddon, addon, isEnabled, showSettings]);
 
-    return <div id={`${addon.id}-card`} className={"bd-addon-card" + (disabled ? " bd-addon-card-disabled" : "")}>
-                <div className="bd-addon-header">
-                        {type === "plugin" ? <ExtIcon size="18px" className="bd-icon" /> : <ThemeIcon size="18px" className="bd-icon" />}
-                        <div className="bd-title">{title}</div>
+    return <div id={`${addon.id}-card`} className={"gd-addon-card" + (disabled ? " gd-addon-card-disabled" : "")}>
+                <div className="gd-addon-header">
+                        {type === "plugin" ? <ExtIcon size="18px" className="gd-icon" /> : <ThemeIcon size="18px" className="gd-icon" />}
+                        <div className="gd-title">{title}</div>
                         <Switch internalState={false} disabled={disabled} checked={isEnabled} onChange={onChange} />
                 </div>
-                <div className="bd-description-wrap">
-                    {disabled && <div className="banner banner-danger"><ErrorIcon className="bd-icon" />{`An error was encountered while trying to load this ${type}.`}</div>}
-                    <div className="bd-description">{SimpleMarkdown.parseToReact(getString(addon.description))}</div>
+                <div className="gd-description-wrap">
+                    {disabled && <div className="banner banner-danger"><ErrorIcon className="gd-icon" />{`An error was encountered while trying to load this ${type}.`}</div>}
+                    <div className="gd-description">{SimpleMarkdown.parseToReact(getString(addon.description))}</div>
                 </div>
                 {footer}
             </div>;

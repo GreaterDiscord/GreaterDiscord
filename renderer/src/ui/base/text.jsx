@@ -3,29 +3,29 @@ import Utilities from "@modules/utilities";
 
 
 export const Colors = Object.freeze({
-    STANDARD: "bd-text-normal",
-    MUTED: "bd-text-muted",
-    ERROR: "bd-text-error",
-    BRAND: "bd-text-brand",
-    LINK: "bd-text-link",
-    HEADER_PRIMARY: "bd-header-primary",
-    HEADER_SECONDARY: "bd-header-secondary",
-    STATUS_YELLOW: "bd-text-yellow",
-    STATUS_GREEN: "bd-text-green",
-    STATUS_RED: "bd-text-red",
-    ALWAYS_WHITE: "bd-text-white",
+    STANDARD: "gd-text-normal",
+    MUTED: "gd-text-muted",
+    ERROR: "gd-text-error",
+    BRAND: "gd-text-brand",
+    LINK: "gd-text-link",
+    HEADER_PRIMARY: "gd-header-primary",
+    HEADER_SECONDARY: "gd-header-secondary",
+    STATUS_YELLOW: "gd-text-yellow",
+    STATUS_GREEN: "gd-text-green",
+    STATUS_RED: "gd-text-red",
+    ALWAYS_WHITE: "gd-text-white",
     CUSTOM: null
 });
 
 
 export const Sizes = Object.freeze({
-    SIZE_10: "bd-text-10",
-    SIZE_12: "bd-text-12",
-    SIZE_14: "bd-text-14",
-    SIZE_16: "bd-text-16",
-    SIZE_20: "bd-text-20",
-    SIZE_24: "bd-text-24",
-    SIZE_32: "bd-text-32"
+    SIZE_10: "gd-text-10",
+    SIZE_12: "gd-text-12",
+    SIZE_14: "gd-text-14",
+    SIZE_16: "gd-text-16",
+    SIZE_20: "gd-text-20",
+    SIZE_24: "gd-text-24",
+    SIZE_32: "gd-text-32"
 });
 
 
@@ -35,8 +35,8 @@ export default function Text({tag: Tag = "div", className, children, color = Col
                     Utilities.className(
                         color, size, className,
                         {
-                            "bd-selectable": selectable,
-                            "bd-text-strong": strong
+                            "gd-selectable": selectable,
+                            "gd-text-strong": strong
                         }
                     )}
                 style={style}
@@ -50,6 +50,6 @@ Text.Sizes = Sizes;
 
 // te = WebpackModules.getModule(m => m?.Sizes?.SIZE_32 && m.Colors)
 // foo = []
-// for (const color in te.Colors) foo.push(BdApi.React.createElement(te, {color: te.Colors[color]}, color))
-// for (const size in te.Sizes) foo.push(BdApi.React.createElement(te, {size: te.Sizes[size]}, size))
-// BdApi.showConfirmationModal("Text Elements", foo)
+// for (const color in te.Colors) foo.push(GdApi.React.createElement(te, {color: te.Colors[color]}, color))
+// for (const size in te.Sizes) foo.push(GdApi.React.createElement(te, {size: te.Sizes[size]}, size))
+// GdApi.showConfirmationModal("Text Elements", foo)

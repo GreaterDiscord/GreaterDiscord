@@ -92,7 +92,7 @@
     color: #FFFFFF;
 }
 
-.floating-window-content #bd-editor-panel {
+.floating-window-content #gd-editor-panel {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -110,7 +110,7 @@
     flex: 1;
 }
 
-.floating-window #bd-editor-controls {
+.floating-window #gd-editor-controls {
     z-index: 10;
     height: auto;
     background: var(--background-secondary-alt);

@@ -37,17 +37,17 @@ export default function Keybind({value: initialValue, onChange, max = 2, clearab
     }, [onChange, state]);
 
     const onClick = useCallback((e) => {
-        if (e.target?.className?.includes?.("bd-keybind-clear") || e.target?.closest(".bd-button")?.className?.includes("bd-keybind-clear")) return clearKeybind(e);
+        if (e.target?.className?.includes?.("gd-keybind-clear") || e.target?.closest(".gd-button")?.className?.includes("gd-keybind-clear")) return clearKeybind(e);
         setState({...state, isRecording: !state.isRecording});
     }, [state, clearKeybind]);
 
 
     const displayValue = state.isRecording ? "Recording..." : !state.value.length ? "N/A" : state.value.join(" + ");
-    return <div className={"bd-keybind-wrap" + (state.isRecording ? " recording" : "")} onClick={onClick}>
-            <input readOnly={true} type="text" className="bd-keybind-input" value={displayValue} />
-            <div className="bd-keybind-controls">
-                <Button size={Button.Sizes.ICON} look={Button.Looks.FILLED} color={state.isRecording ? Button.Colors.RED : Button.Colors.BRAND} className="bd-keybind-record" onClick={onClick}><Keyboard size="24px" /></Button>
-                {clearable && <Button size={Button.Sizes.ICON} look={Button.Looks.BLANK} onClick={clearKeybind} className="bd-keybind-clear"><Close size="24px" /></Button>}
+    return <div className={"gd-keybind-wrap" + (state.isRecording ? " recording" : "")} onClick={onClick}>
+            <input readOnly={true} type="text" className="gd-keybind-input" value={displayValue} />
+            <div className="gd-keybind-controls">
+                <Button size={Button.Sizes.ICON} look={Button.Looks.FILLED} color={state.isRecording ? Button.Colors.RED : Button.Colors.BRAND} className="gd-keybind-record" onClick={onClick}><Keyboard size="24px" /></Button>
+                {clearable && <Button size={Button.Sizes.ICON} look={Button.Looks.BLANK} onClick={clearKeybind} className="gd-keybind-clear"><Close size="24px" /></Button>}
             </div>
         </div>;
 }

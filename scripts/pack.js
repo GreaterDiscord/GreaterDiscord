@@ -5,7 +5,7 @@ const doSanityChecks = require("./validate");
 const buildPackage = require("./package");
 
 const dist = path.resolve(__dirname, "..", "dist");
-const bundleFile = path.join(dist, "betterdiscord.asar");
+const bundleFile = path.join(dist, "greaterdiscord.asar");
 
 const makeBundle = function() {
     console.log("");

@@ -65,11 +65,11 @@ export default function Color({value: initialValue, onChange, colors = defaultCo
     }, [onChange]);
 
     const intValue = resolveColor(value, false);
-    return <div className="bd-color-picker-container">
-        <div className="bd-color-picker-controls">
+    return <div className="gd-color-picker-container">
+        <div className="gd-color-picker-controls">
             <DiscordModules.Tooltip text="Default" position="bottom">
                 {props => (
-                    <div {...props} className="bd-color-picker-default" style={{backgroundColor: resolveColor(defaultValue)}} onClick={() => change({target: {value: defaultValue}})}>
+                    <div {...props} className="gd-color-picker-default" style={{backgroundColor: resolveColor(defaultValue)}} onClick={() => change({target: {value: defaultValue}})}>
                         {intValue === resolveColor(defaultValue, false)
                             ? <Checkmark width="25" height="25" />
                             : null
@@ -79,17 +79,17 @@ export default function Color({value: initialValue, onChange, colors = defaultCo
             </DiscordModules.Tooltip>
             <DiscordModules.Tooltip text={Strings.Settings.customColor} position="bottom">
                 {props => (
-                    <div className="bd-color-picker-custom">
+                    <div className="gd-color-picker-custom">
                         <Dropper color={getContrastColor(resolveColor(value, true))} />
-                        <input {...props} style={{backgroundColor: resolveColor(value)}} type="color" className="bd-color-picker" value={resolveColor(value)} onChange={change} />
+                        <input {...props} style={{backgroundColor: resolveColor(value)}} type="color" className="gd-color-picker" value={resolveColor(value)} onChange={change} />
                     </div>
                 )}
             </DiscordModules.Tooltip>
         </div>
-        <div className="bd-color-picker-swatch">
+        <div className="gd-color-picker-swatch">
             {
                 colors.map((int, index) => (
-                    <div key={index} className="bd-color-picker-swatch-item" style={{backgroundColor: resolveColor(int)}} onClick={() => change({target: {value: int}})}>
+                    <div key={index} className="gd-color-picker-swatch-item" style={{backgroundColor: resolveColor(int)}} onClick={() => change({target: {value: int}})}>
                         {intValue === int
                             ? <Checkmark color={getContrastColor(resolveColor(value, true))} />
                             : null

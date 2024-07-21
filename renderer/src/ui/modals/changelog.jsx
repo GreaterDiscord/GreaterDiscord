@@ -30,13 +30,13 @@ const supportLink = <a className={`${AnchorClasses.anchor} ${AnchorClasses.ancho
 const defaultFooter = <Text>Need support? {supportLink}</Text>;
 
 const twitter = <DiscordModules.Tooltip color="primary" position="top" text={Strings.Socials.twitter}>
-    {p => <a {...p} className="bd-social" href="https://x.com/_BetterDiscord_" rel="noopener noreferrer" target="_blank">
+    {p => <a {...p} className="gd-social" href="https://x.com/_GreaterDiscord_" rel="noopener noreferrer" target="_blank">
         <Twitter />
         </a>}
     </DiscordModules.Tooltip>;
 
 const github = <DiscordModules.Tooltip color="primary" position="top" text={Strings.Socials.github}>
-    {p => <a {...p} className="bd-social" href="https://github.com/BetterDiscord/BetterDiscord" rel="noopener noreferrer" target="_blank">
+    {p => <a {...p} className="gd-social" href="https://github.com/foxypiratecove37350/GreaterDiscord" rel="noopener noreferrer" target="_blank">
         <GitHub />
         </a>}
     </DiscordModules.Tooltip>;
@@ -53,7 +53,7 @@ function YoutubeEmbed({src}) {
 
 function Video({src, poster}) {
     if (src.toLowerCase().includes("youtube.com")) return <YoutubeEmbed src={src} />;
-    return <video src={src} poster={poster} controls={true} className="bd-changelog-poster" />;
+    return <video src={src} poster={poster} controls={true} className="gd-changelog-poster" />;
 }
 
 
@@ -78,13 +78,13 @@ export default function ChangelogModal({transitionState, footer, title, subtitle
     </Footer>, [footer]);
 
     const changelogItems = useMemo(() => {
-        const items = [video ? <Video src={video} poster={poster} /> : <img src={image} className="bd-changelog-poster" />];
+        const items = [video ? <Video src={video} poster={poster} /> : <img src={image} className="gd-changelog-poster" />];
         if (description) items.push(<p>{SimpleMarkdownExt.parseToReact(description)}</p>);
         for (let c = 0; c < changes.length; c++) {
             const entry = changes[c];
-            const type = "bd-changelog-" + entry.type;
-            const margin = c == 0 ? " bd-changelog-first" : "";
-            items.push(<h1 className={`bd-changelog-title ${type}${margin}`}>{entry.title}</h1>);
+            const type = "gd-changelog-" + entry.type;
+            const margin = c == 0 ? " gd-changelog-first" : "";
+            items.push(<h1 className={`gd-changelog-title ${type}${margin}`}>{entry.title}</h1>);
             if (entry.description) items.push(<p>{SimpleMarkdownExt.parseToReact(entry.description)}</p>);
             const list = <ul>{entry.items.map(i => <li>{SimpleMarkdownExt.parseToReact(i)}</li>)}</ul>;
             items.push(list);
@@ -92,7 +92,7 @@ export default function ChangelogModal({transitionState, footer, title, subtitle
         return items;
     }, [description, video, image, poster, changes]);
 
-    return <Root className="bd-changelog-modal" transitionState={transitionState} size={Root.Sizes.MEDIUM} style={Root.Styles.STANDARD}>
+    return <Root className="gd-changelog-modal" transitionState={transitionState} size={Root.Sizes.MEDIUM} style={Root.Styles.STANDARD}>
         {ChangelogHeader}
         <Content>{changelogItems}</Content>
         {ChangelogFooter}

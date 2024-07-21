@@ -11,12 +11,12 @@ import Button from "@ui/base/button";
 
 
 export default function SettingsTitle() {
-    return <div className="bd-sidebar-header">
-                <h2 className="bd-sidebar-header-label">BetterDiscord</h2>
+    return <div className="gd-sidebar-header">
+                <h2 className="gd-sidebar-header-label">GreaterDiscord</h2>
                 <DiscordModules.Tooltip color="primary" position="top" text={Strings.Modals.changelog}>
                     {props =>
-                        <Button {...props} className="bd-changelog-button" look={Button.Looks.BLANK} color={Button.Colors.TRANSPARENT} size={Button.Sizes.NONE} onClick={() => Modals.showChangelogModal(Changelog)}>
-                            <HistoryIcon className="bd-icon" size="16px" />
+                        <Button {...props} className="gd-changelog-button" look={Button.Looks.BLANK} color={Button.Colors.TRANSPARENT} size={Button.Sizes.NONE} onClick={() => Modals.showChangelogModal(Changelog)}>
+                            <HistoryIcon className="gd-icon" size="16px" />
                         </Button>
                     }
                 </DiscordModules.Tooltip>

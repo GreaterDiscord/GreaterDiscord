@@ -7,7 +7,7 @@ import Tooltip from "@ui/tooltip";
 
 
 /**
- * `UI` is a utility class for creating user interfaces. Instance is accessible through the {@link BdApi}.
+ * `UI` is a utility class for creating user interfaces. Instance is accessible through the {@link GdApi}.
  * @type UI
  * @summary {@link UI} is a utility class for creating user interfaces.
  * @name UI

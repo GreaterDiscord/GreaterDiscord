@@ -100,7 +100,7 @@
                 },
                 "debugLogs": {
                     "name": "Debugger Logs",
-                    "note": "Speichert alle Ausgaben aus der Konsole in die \\\"debug.log\\\" Datei im BetterDiscord Verzeichnis"
+                    "note": "Speichert alle Ausgaben aus der Konsole in die \\\"debug.log\\\" Datei im GreaterDiscord Verzeichnis"
                 }
             }
         }

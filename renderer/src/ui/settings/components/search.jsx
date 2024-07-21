@@ -28,8 +28,8 @@ export default function Search({onChange, className, onKeyDown, placeholder}) {
         input.current.focus();
     }, [onChange, input]);
 
-    return <div className={"bd-search-wrapper" + (className ? ` ${className}` : "")}>
-                <input onChange={change} onKeyDown={onKeyDown} type="text" className="bd-search" placeholder={placeholder} maxLength="50" value={value} ref={input}/>
+    return <div className={"gd-search-wrapper" + (className ? ` ${className}` : "")}>
+                <input onChange={change} onKeyDown={onKeyDown} type="text" className="gd-search" placeholder={placeholder} maxLength="50" value={value} ref={input}/>
                 {!value && <SearchIcon />}
                 {value && <Button look={Button.Looks.BLANK} color={Button.Colors.TRANSPARENT} size={Button.Sizes.NONE} onClick={reset}><Close size="16px" /></Button>}
             </div>;

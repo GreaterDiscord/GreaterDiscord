@@ -6,22 +6,22 @@ export default class DOMManager {
     /** Document/window height */
     static get screenHeight() {return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);}
 
-    static get bdHead() {return this.getElement("bd-head");}
-    static get bdBody() {return this.getElement("bd-body");}
-    static get bdScripts() {return this.getElement("bd-scripts");}
-    static get bdStyles() {return this.getElement("bd-styles");}
-    static get bdThemes() {return this.getElement("bd-themes");}
+    static get bdHead() {return this.getElement("gd-head");}
+    static get bdBody() {return this.getElement("gd-body");}
+    static get bdScripts() {return this.getElement("gd-scripts");}
+    static get bdStyles() {return this.getElement("gd-styles");}
+    static get bdThemes() {return this.getElement("gd-themes");}
     static get bdCustomCSS() {return this.getElement("#customcss");}
-    static get bdTooltips() {return this.getElement("bd-tooltips") || this.createElement("bd-tooltips").appendTo(this.bdBody);}
-    static get bdModals() {return this.getElement("bd-modals") || this.createElement("bd-modals").appendTo(this.bdBody);}
-    static get bdToasts() {return this.getElement("bd-toasts") || this.createElement("bd-toasts").appendTo(this.bdBody);}
+    static get bdTooltips() {return this.getElement("gd-tooltips") || this.createElement("gd-tooltips").appendTo(this.bdBody);}
+    static get bdModals() {return this.getElement("gd-modals") || this.createElement("gd-modals").appendTo(this.bdBody);}
+    static get bdToasts() {return this.getElement("gd-toasts") || this.createElement("gd-toasts").appendTo(this.bdBody);}
 
     static initialize() {
-        // this.createElement("bd-head", {target: document.head});
-        // this.createElement("bd-body", {target: document.body});
-        // this.createElement("bd-scripts", {target: this.bdHead});
-        // this.createElement("bd-styles", {target: this.bdHead});
-        // this.createElement("bd-themes", {target: this.bdHead});
+        // this.createElement("gd-head", {target: document.head});
+        // this.createElement("gd-body", {target: document.body});
+        // this.createElement("gd-scripts", {target: this.bdHead});
+        // this.createElement("gd-styles", {target: this.bdHead});
+        // this.createElement("gd-themes", {target: this.bdHead});
         // this.createElement("style", {id: "customcss", target: this.bdHead});
     }
 
@@ -198,9 +198,9 @@ export default class DOMManager {
     }
 }
 
-DOMManager.createElement("bd-head", {target: document.body});
-DOMManager.createElement("bd-body", {target: document.body});
-DOMManager.createElement("bd-scripts", {target: DOMManager.bdHead});
-DOMManager.createElement("bd-styles", {target: DOMManager.bdHead});
-DOMManager.createElement("bd-themes", {target: DOMManager.bdHead});
+DOMManager.createElement("gd-head", {target: document.body});
+DOMManager.createElement("gd-body", {target: document.body});
+DOMManager.createElement("gd-scripts", {target: DOMManager.bdHead});
+DOMManager.createElement("gd-styles", {target: DOMManager.bdHead});
+DOMManager.createElement("gd-themes", {target: DOMManager.bdHead});
 DOMManager.createElement("style", {id: "customcss", target: DOMManager.bdHead});

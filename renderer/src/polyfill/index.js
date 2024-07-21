@@ -11,8 +11,8 @@ import Remote from "./remote";
 import Logger from "common/logger";
 
 const deprecated = new Map([
-    ["request", "Use BdApi.Net.fetch instead."],
-    ["https", "Use BdApi.Net.fetch instead."],
+    ["request", "Use GdApi.Net.fetch instead."],
+    ["https", "Use GdApi.Net.fetch instead."],
 ]);
 
 

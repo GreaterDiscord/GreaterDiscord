@@ -17,7 +17,7 @@ function setupMarkdown() {
         const originalLink = rules.link.react;
         rules.link.react = function() {
             const original = Reflect.apply(originalLink, undefined, arguments);
-            original.props.className = "bd-link";
+            original.props.className = "gd-link";
             original.props.target = "_blank";
             original.props.rel = "noopener noreferrer";
             return original;
@@ -27,7 +27,7 @@ function setupMarkdown() {
 
 export default function Markdown({className, children}) {
     if (!DiscordMarkdown && !rules) setupMarkdown();
-    if (!DiscordMarkdown) return <div className="bd-markdown-fallback">{children}</div>;
+    if (!DiscordMarkdown) return <div className="gd-markdown-fallback">{children}</div>;
     
     return <DiscordMarkdown
                 className={className}

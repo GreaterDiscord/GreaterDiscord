@@ -1,10 +1,10 @@
-.bd-sidebar-header {
+.gd-sidebar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bd-sidebar-header h2 {
+.gd-sidebar-header h2 {
     padding: 6px 10px;
     box-sizing: border-box;
     color: #96989d;
@@ -19,16 +19,16 @@
     font-size: 12px;
 }
 
-.bd-sidebar-header .bd-changelog-button {
+.gd-sidebar-header .gd-changelog-button {
     height: 16px;
     padding: 0;
 }
 
-.bd-sidebar-header .bd-icon {
+.gd-sidebar-header .gd-icon {
     cursor: pointer;
     fill: var(--interactive-normal);
 }
 
-.bd-sidebar-header .bd-changelog-button:hover .bd-icon {
+.gd-sidebar-header .gd-changelog-button:hover .gd-icon {
     fill: var(--interactive-hover);
 }
