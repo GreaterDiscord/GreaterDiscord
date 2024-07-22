@@ -1,6 +1,6 @@
 {
     "name": "greaterdiscord",
-    "version": "1.10.2",
+    "version": "1.11",
     "description": "Enhances Discord by adding functionality and themes.",
     "main": "src/index.js",
     "scripts": {
@@ -14,7 +14,8 @@
         "test": "mocha --require @babel/register --recursive \"./tests/renderer/*.js\"",
         "dist": "pnpm run build-prod && node scripts/pack.js",
         "api": "jsdoc -X -r renderer/src/modules/api/ > jsdoc-ast.json",
-        "translations": "node -r dotenv/config scripts/translations.js"
+        "translations": "node -r dotenv/config scripts/translations.js",
+		"full-build": "pnpm run build && pnpm run inject stable"
     },
     "devDependencies": {
         "@babel/core": "^7.23.9",
