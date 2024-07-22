@@ -46,7 +46,7 @@ function openFolder(folder) {
 }
 
 function blankslate(type, onClick) {
-    const message = Strings.Addons.blankSlateMessage.format({link: `https://greaterdiscord.app/${type}s`, type}).toString();
+    const message = Strings.Addons.blankSlateMessage.format({link: `https://betterdiscord.app/${type}s`, type}).toString();
     return <EmptyImage title={Strings.Addons.blankSlateHeader.format({type})} message={message}>
         <Button size={Button.Sizes.LARGE} onClick={onClick}>{Strings.Addons.openFolder.format({type})}</Button>
     </EmptyImage>;
