@@ -10,8 +10,8 @@ const css = `/* BEGIN V2 LOADER */
   right:5px;
   z-index: 2147483647;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   background-size: 100% 100%;
   animation: gd-loading-animation 1.5s ease-in-out infinite;
 }
