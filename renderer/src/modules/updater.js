@@ -26,9 +26,9 @@ import UpdaterPanel from "@ui/updater";
 
 const UserSettingsWindow = WebpackModules.getByProps("updateAccount");
 
-const base = "https://api.greaterdiscord.app/v2/store/";
+const base = "https://api.betterdiscord.app/v2/store/";
 const route = r => `${base}${r}s`;
-const redirect = addonId => `https://greaterdiscord.app/gh-redirect?id=${addonId}`;
+const redirect = addonId => `https://betterdiscord.app/gh-redirect?id=${addonId}`;
 
 const getJSON = url => {
     return new Promise(resolve => {
