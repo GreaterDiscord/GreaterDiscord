@@ -22,7 +22,7 @@
                     "name": "Disable Media Keys",
                     "note": "Prevents Discord from hijacking your media keys after playing a video."
                 },
-                "bdContextMenu": {
+                "gdContextMenu": {
                     "name": "Settings Context Menu",
                     "note": "Adds a GreaterDiscord subsection to the settings context menu."
                 }
@@ -242,7 +242,7 @@
     },
     "Updater": {
         "updateFailed": "Update Failed!",
-        "updateFailedMessage": "GreaterDiscord failed to update. Please download the latest version of the installer from our website (https://greaterdiscord.app/) and reinstall.",
+        "updateFailedMessage": "GreaterDiscord failed to update. Please download the latest version of the installer from our website (https://betterdiscord.app/) and reinstall.",
         "updateSuccessful": "Update Successful!",
         "updateAvailable": "GreaterDiscord has a new update (v{{version}})",
         "addonUpdatesAvailable": "GreaterDiscord has found updates for {{count}} of your {{type}}s!",

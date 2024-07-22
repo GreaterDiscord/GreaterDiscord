@@ -233,7 +233,7 @@
     },
     "Updater": {
         "updateFailed": "Cập Nhật Thất Bại!",
-        "updateFailedMessage": "Không thể cập nhật GreaterDiscord. Vui lòng tải trình cài đặt mới nhất ở trang web (https://greaterdiscord.app/) và cài đặt lại.",
+        "updateFailedMessage": "Không thể cập nhật GreaterDiscord. Vui lòng tải trình cài đặt mới nhất ở trang web (https://betterdiscord.app/) và cài đặt lại.",
         "updateSuccessful": "Cập Nhật Thành Công!",
         "updateAvailable": "GreaterDiscord có cập nhật mới (v{{version}})",
         "addonUpdatesAvailable": "GreaterDiscord đã phát hiện {{count}} cho {{type}} của bạn!",

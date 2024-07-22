@@ -228,7 +228,7 @@
     },
     "Updater": {
         "updateFailed": "Päivitys epäonnistui",
-        "updateFailedMessage": "GreaterDiscordin päivitys epäonnistui. Lataa asennusohjelman uusin versio verkkosivustoltamme (https://greaterdiscord.app/) ja asenna se uudelleen.",
+        "updateFailedMessage": "GreaterDiscordin päivitys epäonnistui. Lataa asennusohjelman uusin versio verkkosivustoltamme (https://betterdiscord.app/) ja asenna se uudelleen.",
         "updateSuccessful": "Päivittäminen onnistui!",
         "updateAvailable": "GreaterDiscordilla on uusi päivitys",
         "addonUpdatesAvailable": "GreaterDiscord on löytänyt päivityksiä {{count}}:lle {{type}}:lle!",

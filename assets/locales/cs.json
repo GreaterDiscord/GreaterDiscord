@@ -230,7 +230,7 @@
     },
     "Updater": {
         "updateFailed": "Aktualizace selhala!",
-        "updateFailedMessage": "Aktualizace BettterDiscordu se nezdařila. Stáhněte si prosím nejnovější verzi instalátoru z našeho webu (https://greaterdiscord.app) a přeinstalujte jej.",
+        "updateFailedMessage": "Aktualizace BettterDiscordu se nezdařila. Stáhněte si prosím nejnovější verzi instalátoru z našeho webu (https://betterdiscord.app) a přeinstalujte jej.",
         "updateSuccessful": "Aktualizace byla úspěšná!",
         "updateAvailable": "GreaterDiscord má novou aktualizaci (v{{version}})",
         "addonUpdatesAvailable": "GreaterDiscord nalezl aktualizace {{count}} vašich doplňků typu {{type}}!",

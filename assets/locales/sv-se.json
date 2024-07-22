@@ -168,7 +168,7 @@
     },
     "Updater": {
         "updateFailed": "Uppdateringen misslyckades!",
-        "updateFailedMessage": "GreaterDiscord kunde inte uppdateras. Ladda ned den senaste versionen av installationsprogrammet från vår webbplats (https://greaterdiscord.app/) och installera om GreaterDiscord.",
+        "updateFailedMessage": "GreaterDiscord kunde inte uppdateras. Ladda ned den senaste versionen av installationsprogrammet från vår webbplats (https://betterdiscord.app/) och installera om GreaterDiscord.",
         "updateSuccessful": "Uppdateringen lyckades!",
         "checking": "Söker efter uppdateringar!",
         "finishedChecking": "Sökningen efter uppdateringar är slutförd!",

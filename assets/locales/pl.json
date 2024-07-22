@@ -230,7 +230,7 @@
     },
     "Updater": {
         "updateFailed": "Aktualizacja nie powiodła się!",
-        "updateFailedMessage": "Nie udało się zaktualizować GreaterDiscorda. Pobierz najnowszy instalator z naszej strony (https://greaterdiscord.app/) i zainstaluj aplikację ponownie.",
+        "updateFailedMessage": "Nie udało się zaktualizować GreaterDiscorda. Pobierz najnowszy instalator z naszej strony (https://betterdiscord.app/) i zainstaluj aplikację ponownie.",
         "updateSuccessful": "Aktualizacja powiodła się!",
         "updateAvailable": "Dostępna jest nowa aktualizacja GreaterDiscorda (wersja {{version}})",
         "addonUpdatesAvailable": "Są dostępne nowe aktualizacje dla twoich dodatków ({{count}})!",

@@ -230,7 +230,7 @@
     },
     "Updater": {
         "updateFailed": "アップデートに失敗しました！",
-        "updateFailedMessage": "GreaterDiscordのアップデートに失敗しました。ホームページ(https://greaterdiscord.app/)から最新版のインストーラーをダウンロードして、再インストールしてください。",
+        "updateFailedMessage": "GreaterDiscordのアップデートに失敗しました。ホームページ(https://betterdiscord.app/)から最新版のインストーラーをダウンロードして、再インストールしてください。",
         "updateSuccessful": "アップデートに成功しました！",
         "updateAvailable": "GreaterDiscordに新しいアップデート(v{{version}})があります。",
         "addonUpdatesAvailable": "GreaterDiscordは{{.type}}のアップデートを{{count}}個見つけました！",

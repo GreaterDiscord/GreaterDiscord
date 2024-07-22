@@ -230,7 +230,7 @@
     },
     "Updater": {
         "updateFailed": "Η ενημέρωση Απέτυχε!",
-        "updateFailedMessage": "Το GreaterDiscord απέτυχε να ενημερωθεί. Λάβετε την τελευταία έκδοση του προγράμματος εγκατάστασης από την ιστοσελίδα μας (https://greaterdiscord.app/) και κάντε επανεγκατάσταση.",
+        "updateFailedMessage": "Το GreaterDiscord απέτυχε να ενημερωθεί. Λάβετε την τελευταία έκδοση του προγράμματος εγκατάστασης από την ιστοσελίδα μας (https://betterdiscord.app/) και κάντε επανεγκατάσταση.",
         "updateSuccessful": "Η Ενημέρωση ήταν Επιτυχής!",
         "updateAvailable": "Το GreaterDiscord έχει μια νέα ενημερωση (v{{version}})",
         "addonUpdatesAvailable": "Το GreaterDiscord έχει ενημερώσεις για {{count}} από τα {{type}}!",
