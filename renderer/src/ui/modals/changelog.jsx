@@ -23,14 +23,14 @@ const AnchorClasses = WebpackModules.getByProps("anchorUnderlineOnHover") || {an
 const joinSupportServer = (click) => {
     click.preventDefault();
     click.stopPropagation();
-    DiscordModules.InviteActions.acceptInviteAndTransitionToInviteChannel({inviteKey: "0Tmfo5ZbORCRqbAd"});
+    DiscordModules.InviteActions.acceptInviteAndTransitionToInviteChannel({inviteKey: "Wv8CQRPj7H"});
 };
 
 const supportLink = <a className={`${AnchorClasses.anchor} ${AnchorClasses.anchorUnderlineOnHover}`} onClick={joinSupportServer}>Join our Discord Server.</a>;
 const defaultFooter = <Text>Need support? {supportLink}</Text>;
 
 const twitter = <DiscordModules.Tooltip color="primary" position="top" text={Strings.Socials.twitter}>
-    {p => <a {...p} className="gd-social" href="https://x.com/_GreaterDiscord_" rel="noopener noreferrer" target="_blank">
+    {p => <a {...p} className="gd-social" href="https://x.com/GreaterDiscord" rel="noopener noreferrer" target="_blank">
         <Twitter />
         </a>}
     </DiscordModules.Tooltip>;
