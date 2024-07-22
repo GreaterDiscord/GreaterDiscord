@@ -17,7 +17,7 @@ const UserSettingsWindow = Webpack.getByProps("open", "updateAccount");
 export default new class BDContextMenu extends Builtin {
     get name() {return "BDContextMenu";}
     get category() {return "general";}
-    get id() {return "bdContextMenu";}
+    get id() {return "gdContextMenu";}
 
     constructor() {
         super(...arguments);
