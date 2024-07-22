@@ -12,18 +12,18 @@
 [downloads-link]: #auto-installers
 
 [discord-badge]: https://img.shields.io/badge/discord-green?labelColor=0c0d10&color=7289da&style=for-the-badge&logo=discord&logoColor=7289da
-[discord-link]: https://discord.gg/bnSUxedypU
+[discord-link]: https://discord.gg/Wv8CQRPj7H
 
 [website-badge]: https://img.shields.io/badge/website-green?labelColor=0c0d10&color=ed4245&style=for-the-badge&logo=firefoxbrowser&logoColor=ed4245
-[website-link]: https://greaterdiscord.app
+[website-link]: https://betterdiscord.app
 
 [docs-badge]: https://img.shields.io/badge/docs-green?labelColor=0c0d10&color=ed4245&style=for-the-badge&logo=readthedocs&logoColor=ed4245
-[docs-link]: https://docs.greaterdiscord.app
+[docs-link]: https://foxypiratecove37350.github.io/greaterdiscord.app/docs
 
 
 GreaterDiscord is a client modification for Discord with endless flexibility and addons. The only limit to the customization is your own imagination.
 
-[![Theme Split](https://greaterdiscord.app/resources/branding/split.png)](https://greaterdiscord.app/)
+![GreaterDiscord Banner](/brand/banner.png)
 
 </div>
 
@@ -31,7 +31,7 @@ GreaterDiscord is a client modification for Discord with endless flexibility and
 
 # Installation
 
-Download the installer for your operating system below. You can check [this page](https://docs.greaterdiscord.app/users/getting-started/installation) for a more detailed guide.
+Download the installer for your operating system below. You can check [this page](https://foxypiratecove37350.github.io/greaterdiscord.app/docs/users/getting-started/installation) for a more detailed guide.
 
 [![Windows Installer][windows-badge]][windows-link] [![Mac Installer][mac-badge]][mac-link] [![Linux Installer][linux-badge]][linux-link]
 
@@ -48,13 +48,13 @@ Download the installer for your operating system below. You can check [this page
 
 # Manual Installation
 
-For normal users, installing via the installers makes the most sense. However when wanting to either develop GreaterDiscord, or when the installers do not work, this option can be used. Please see our [detailed documentation](https://docs.greaterdiscord.app/users/getting-started/installation#manual-installation) for a guide on how to do this.
+For normal users, installing via the installers makes the most sense. However when wanting to either develop GreaterDiscord, or when the installers do not work, this option can be used. Please see our [detailed documentation](https://foxypiratecove37350.github.io/greaterdiscord.app/docs/users/getting-started/installation#manual-installation) for a guide on how to do this.
 
 
 
 # Addons
 
-Installing addons--like plugins and themes--is easy. All you need to do is select and download an addon from [our website][website-link] and put it in your folder. If you want some more details, or just prefer a visual guide, take a look at our [tutorial on installing addons](https://docs.greaterdiscord.app/users/guides/installing-addons) that includes a demonstration video.
+Installing addons--like plugins and themes--is easy. All you need to do is select and download an addon from [BetterDiscord's website](https://betterdiscord.app) and put it in your folder. If you want some more details, or just prefer a visual guide, take a look at our [tutorial on installing addons](https://foxypiratecove37350.github.io/greaterdiscord.app/docs/users/guides/installing-addons) that includes a demonstration video.
 
 
 
@@ -75,5 +75,5 @@ For information on contributing to this project, please see [CONTRIBUTING.md](/C
 
 [![Contributors][contributors-image]][contributors-link]
 
-[contributors-image]: https://contrib.rocks/image?repo=greaterdiscord/greaterdiscord
-[contributors-link]: https://github.com/greaterdiscord/greaterdiscord/graphs/contributors
+[contributors-image]: https://contrib.rocks/image?repo=foxypiratecove37350/greaterdiscord
+[contributors-link]: https://github.com/foxypiratecove37350/greaterdiscord/graphs/contributors
