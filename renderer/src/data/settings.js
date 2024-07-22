@@ -7,7 +7,7 @@ export default [
             {type: "switch", id: "voiceDisconnect", value: false},
             {type: "switch", id: "showToasts", value: true},
             {type: "switch", id: "mediaKeys", value: false},
-            {type: "switch", id: "bdContextMenu", value: true}
+            {type: "switch", id: "gdContextMenu", value: true}
         ]
     },
     {
