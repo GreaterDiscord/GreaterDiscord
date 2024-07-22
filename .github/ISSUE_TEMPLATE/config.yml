@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: GreaterDiscord Support Server
-    url: https://greaterdiscord.app/invite
+    url: https://discord.gg/Wv8CQRPj7H
     about: The best place to get immediate support.
   - name: Troubleshooting Guide
-    url: https://docs.greaterdiscord.app/users/getting-started/troubleshooting
+    url: https://foxypiratecove37350.github.io/greaterdiscord.app/docs/users/getting-started/troubleshooting
     about: The user troubleshooting guide from the documentation.
