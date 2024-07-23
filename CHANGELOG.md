@@ -7,6 +7,10 @@
 ### Added
 
 - Added the `full-build` command that build and then inject the local source code version.
+- Added plugins installed by default in the installer:
+    - [**LaTeX Renderer** by **quantumsoul**](https://betterdiscord.app/plugin/LaTeX%20Renderer)
+    - [**SplitLargeMessages** by **DevilBro**](https://betterdiscord.app/plugin/SplitLargeMessages)
+    - [**ReadAllNotificationsButton** by **DevilBro**](https://betterdiscord.app/plugin/ReadAllNotificationsButton)
 
 ### Removed
 
